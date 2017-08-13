@@ -1,0 +1,41 @@
+@import './church_fonts.scss';
+@import './church_vars.scss';
+
+html {
+	font-size: 62.5%;
+}
+
+body * {
+	font-family: 'Brown Bold', sans-serif !important;
+}
+
+button {
+	font-size: 1.4rem;
+	text-transform: uppercase;
+	letter-spacing: .2rem;
+	background: none;
+	padding: 1.1rem 1.1rem .9rem 1.3rem;
+	margin: 0;
+	border: none;
+	cursor: pointer;
+}
+
+button.btn-primary {
+	background: $gold;
+	color: white;
+	transition-duration: $transition; 
+	&:hover {
+		background: $gold-hover;
+	}
+}
+
+
+.container {
+	max-width: 104rem;
+	margin: 0 auto;
+}
+
+
+a {
+	cursor: pointer;
+}
