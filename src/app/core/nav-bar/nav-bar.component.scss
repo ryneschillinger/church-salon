@@ -1,13 +1,17 @@
 @import '../../../styles/church_vars.scss';
 
 nav {
-	padding: 1.6rem;
+	position: fixed;
+	width: 100%;
+	z-index: 10;
 	background: white;
+	padding: 1.5rem 0;
 	-webkit-box-shadow: 0 2px 8px 0 rgba(54,54,54,0.10);
 	        box-shadow: 0 2px 8px 0 rgba(54,54,54,0.10);
 }
 
 nav .container {
+	z-index: 10;
 	display: -webkit-box;
 	display: -ms-flexbox;
 	display: flex;
@@ -20,6 +24,7 @@ nav .container {
 }
 
 nav .nav-links a {
+	font-family: 'Brown Bold', sans-serif;
 	text-transform: uppercase;
 	text-decoration: none;
 	letter-spacing: .2rem;
@@ -55,5 +60,5 @@ nav .nav-links a {
 
 #logo-desktop {
 	height: 3.6rem;
-	margin: .2rem 0 -.2rem 0;
+	margin: .1rem 0 -.1rem 0;
 }
