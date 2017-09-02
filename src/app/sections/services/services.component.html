@@ -1,0 +1,36 @@
+<section id="services">
+	<hr class="hr-gold-thick"/>
+	<div class="container section-padding">
+
+		<!-- Services -->
+		<div class="grid-row">
+			<div class="col-xs-2"></div>
+			<section class="col-xs-8">
+
+				<div class="services-type">
+					<h2>CUTS</h2>
+					<ul class="services-list">
+						<li *ngFor="let service of cuts; let i = index">
+							<span class="txt-bold">{{service.name}}</span>
+							<span class="txt-regular">{{service.price}}</span>
+						</li>
+					</ul>
+				</div>
+
+				<div class="services-type">
+					<h2>COLOR</h2>
+					<ul class="services-list">
+						<li *ngFor="let service of color; let i = index">
+							<span class="txt-bold">{{service.name}}</span>
+							<span class="txt-regular">{{service.price}}</span>
+						</li>
+					</ul>
+				</div>
+
+
+			</section>
+			<div class="col-xs-2"></div>
+		</div>
+
+	</div>
+</section>

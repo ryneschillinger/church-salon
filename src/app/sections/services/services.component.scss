@@ -1,0 +1,37 @@
+@import '../../../styles/church_vars.scss';
+
+#services {
+	background: white;
+	width: 100%;
+	box-shadow: $box-shadow-xlarge;
+}
+
+.services-type {
+	h2 {
+		text-align: center;
+	}
+}
+
+.services-list {
+	border-top: .2rem solid $black;
+	border-bottom: .2rem solid $black;
+	li {
+		font-family: 'Brown Bold', sans-serif;
+		padding: 1.6rem 1.8rem;
+		margin: 0;
+		display: flex;
+		justify-content: space-between;
+		.txt-bold {
+			text-transform: uppercase;
+			letter-spacing: .2rem;
+			font-size: 1.4rem;
+		}
+		.txt-regular {
+			letter-spacing: .05rem;
+			font-size: 1.5rem;
+		}
+	}
+	li:nth-child(odd) {
+		background: $off-gold;
+	}
+}

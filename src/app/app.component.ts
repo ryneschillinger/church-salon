@@ -9,6 +9,7 @@ import { Component, ViewEncapsulation, OnInit } from '@angular/core';
   	'../styles/church_fonts.scss',
   	'../styles/church_global-styles.scss',
   	'../styles/church_vars.scss',
+    '../styles/church_grid.scss',
   ],
   encapsulation: ViewEncapsulation.None 
 })

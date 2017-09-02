@@ -37,12 +37,6 @@ body {
 
 /*-------- LAYOUT AND GRID --------*/
 
-.container {
-  margin: 0 auto;
-  max-width: 104rem;
-  width: 92%;
-}
-
 .line-break {
 	display: none;
 }
@@ -52,6 +46,10 @@ body {
 	flex-direction: column;
 	justify-content: flex-start;
 	align-items: flex-end;
+}
+
+.section-padding {
+	padding: 8rem 0;
 }
 
 
@@ -151,4 +149,38 @@ hr.hr-gold-thick {
 	background: -webkit-linear-gradient(left, #EDCB84, #C8A059);
 	background: -o-linear-gradient(left, #EDCB84, #C8A059);
 	background: linear-gradient(to right, #EDCB84, #C8A059);
+}
+
+/*-------- LISTS --------*/
+
+ul {
+	list-style: none;
+	padding: 0;
+	margin: 0 -.6rem;
+	li {
+		list-style-position: inside;
+	}
+}
+
+/*-------- SECTION DIVIDERS --------*/
+
+.section-divider {
+	.playfair {
+		font-size: 2rem;
+		letter-spacing: .3rem;
+		transform: translateY(-.3rem);
+	}
+	.playfair-divider {
+		font-size: 2rem;
+		margin: 0 1rem 0 1.8rem;
+	}
+	h6 {
+		font-family: 'Brown Italic', sans-serif;
+		letter-spacing: 1rem;
+		margin: 2rem 0;
+		display: flex;
+		align-items: center;
+		line-height: 1;
+		padding: 0;
+	}
 }
