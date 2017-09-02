@@ -39,6 +39,7 @@ h2.hero-message {
 }
 
 #hero-image {
+	position: relative;
 	width: 50rem;
 	height: 50rem;
 	overflow: hidden;
@@ -51,4 +52,12 @@ h2.hero-message {
 	background-position: center center;
 	-webkit-box-shadow: 0 .6rem 2.5rem rgba(44,44,44,.2);
 	        box-shadow: 0 .6rem 2.5rem rgba(44,44,44,.2);
+}
+
+#hero-image .color-bars {
+	position: absolute;
+	bottom: -.3rem;
+	right: 0;
+	width: 1rem;
+	height: 7rem;
 }

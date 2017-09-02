@@ -38,10 +38,13 @@ body {
 /*-------- LAYOUT AND GRID --------*/
 
 .container {
-	width: 100%;
-	max-width: 104rem;
-	margin: 0 auto;
-	padding: 0 1.6rem;
+  margin: 0 auto;
+  max-width: 104rem;
+  width: 92%;
+}
+
+.line-break {
+	display: none;
 }
 
 
@@ -55,6 +58,27 @@ h1 {
 h2 {
 	font-size: 3.8rem;
 	line-height: 1.1;
+}
+
+h6 {
+	font-size: 1.2rem;
+	letter-spacing: .05rem;
+}
+
+.txt-gold {
+	color: $gold !important;
+}
+
+.txt-light {
+	font-family: 'Brown Light', sans-serif;
+}
+
+.txt-regular {
+	font-family: 'Brown Regular', sans-serif;
+}
+
+.txt-bold {
+	font-family: 'Brown Bold', sans-serif;
 }
 
 

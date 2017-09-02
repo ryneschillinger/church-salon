@@ -10,10 +10,12 @@ import { AppComponent } from './app.component';
 /*---------- COMPONENTS ----------*/
 
 import {NavBarComponent} from './core/nav-bar/nav-bar.component';
+import {SiteFooterComponent} from './core/site-footer/site-footer.component';
 
 export const components = [
 	AppComponent,
-	NavBarComponent
+	NavBarComponent,
+  SiteFooterComponent,
 ]
 
 
