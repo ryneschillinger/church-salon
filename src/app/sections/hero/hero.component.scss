@@ -1,0 +1,109 @@
+@import '../../../styles/church_vars.scss';
+
+#hero {
+	width: 100%;
+	box-shadow: $box-shadow-xlarge;
+	padding-top: 14rem;
+}
+
+#hero-bkg {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 125%;
+	max-height: 94rem;
+	min-height: 40rem;
+	background: url(../../../assets/paint_blur.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	clip-path: polygon(0 0, 100% 0, 100% 50%, 0% 100%);
+	-webkit-clip-path: polygon(0 0, 100% 0, 100% 50%, 0% 100%);
+	z-index: -1;
+}
+
+#hero-messaging {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-pack: justify;
+	    -ms-flex-pack: justify;
+	        justify-content: space-between;
+	-webkit-box-align: center;
+	    -ms-flex-align: center;
+	        align-items: center;
+	z-index: 1;
+}
+
+h2.hero-message {
+	font-family: 'Brown Light', sans-serif !important;
+	color: white;
+	max-width: 50rem;
+}
+
+#hero-image {
+	position: relative;
+	width: 50rem;
+	height: 50rem;
+	overflow: hidden;
+	-webkit-transform: translateX(-1px);
+		ms-transform: translateX(-1px);
+		transform: translateX(-1px);
+	background: url('../../../assets/amy_hero.jpg');
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center center;
+	-webkit-box-shadow: $box-shadow-large;
+	        box-shadow: $box-shadow-large;
+}
+
+#hero-image .color-bars {
+	position: absolute;
+	bottom: -.3rem;
+	right: 0;
+	width: 1rem;
+	height: 7rem;
+}
+
+
+/* SALON INTRO */
+
+#my-promise {
+	z-index: 2;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	align-items: flex-end;
+	margin-top: 4rem;
+
+	h3.promise-copy {
+		margin: 6rem auto 7rem auto;
+		max-width: 80%;
+	}
+}
+
+.seamonster-icon {
+	width: 13.5rem;
+}
+
+.section-divider {
+	.playfair {
+		font-size: 2rem;
+		letter-spacing: .3rem;
+		transform: translateY(-.3rem);
+	}
+	.playfair-divider {
+		font-size: 2rem;
+		margin: 0 1rem 0 1.8rem;
+	}
+	h6 {
+		font-family: 'Brown Italic', sans-serif;
+		letter-spacing: 1rem;
+		text-align: right;
+		margin: 2rem 0;
+		display: flex;
+		align-items: center;
+		line-height: 1;
+		padding: 0;
+	}
+}

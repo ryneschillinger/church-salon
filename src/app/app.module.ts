@@ -11,11 +11,13 @@ import { AppComponent } from './app.component';
 
 import {NavBarComponent} from './core/nav-bar/nav-bar.component';
 import {SiteFooterComponent} from './core/site-footer/site-footer.component';
+import {HeroComponent} from './sections/hero/hero.component';
 
 export const components = [
 	AppComponent,
 	NavBarComponent,
   SiteFooterComponent,
+  HeroComponent,
 ]
 
 

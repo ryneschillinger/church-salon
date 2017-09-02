@@ -15,9 +15,41 @@
 }
 
 @font-face {
+  font-family: 'Brown Italic';
+  src:  url('../fonts/lineto-brown-italic.eot') format('embedded-opentype'),
+    url('../fonts/lineto-brown-italic.ttf') format('truetype'),
+    url('../fonts/lineto-brown-italic.woff') format('woff'),
+    url('../fonts/lineto-brown-italic.svg') format('svg');
+}
+
+@font-face {
   font-family: 'Brown Bold';
   src:  url('../fonts/lineto-brown-bold.eot') format('embedded-opentype'),
     url('../fonts/lineto-brown-bold.ttf') format('truetype'),
     url('../fonts/lineto-brown-bold.woff') format('woff'),
-    url('../fonts/lineto-brown-bold.svg') format('svg');
+    url('../fonts/lineto-brown-bold.svg') format('sitalicvg');
+}
+
+@font-face {
+  font-family: 'Brown Bold Italic';
+  src:  url('../fonts/lineto-brown-bolditalic.eot') format('embedded-opentype'),
+    url('../fonts/lineto-brown-bolditalic.ttf') format('truetype'),
+    url('../fonts/lineto-brown-bolditalic.woff') format('woff'),
+    url('../fonts/lineto-brown-bolditalic.svg') format('svg');
+}
+
+.playfair {
+  font-family: 'Playfair Display', serif;
+  font-weight: 900;
+  font-style: italic;
+  line-height: 1;
+  margin: 0;
+}
+
+.playfair-divider {
+  font-family: 'Playfair Display', serif;
+  font-weight: 400;
+  font-style: italic;
+  line-height: 1;
+  margin: 0;
 }
