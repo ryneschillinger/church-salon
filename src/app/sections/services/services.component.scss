@@ -4,20 +4,60 @@
 	background: white;
 	width: 100%;
 	box-shadow: $box-shadow-xlarge;
+	position: relative;
+	background: transparent;
+
+	.section-divider {
+		position: relative;
+		display: flex;
+		align-items: center;
+		img {
+			position: absolute;
+			left: 0;
+			height: 9.4rem;
+		}
+		h6 {
+			margin: 1.6rem 0 .5rem 3.4rem;
+			text-align: right;
+		}
+	}
+
+	.section-padding {
+		padding-top: 8.5rem;
+	}
+
 }
 
 .services-type {
+
+	margin-top: 8.5rem;
+
+	.section-header {
+		width: 100%;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		position: relative;
+		overflow: hidden;
+	}
+
 	h2 {
-		text-align: center;
+		position: absolute;
+		left: -9999px;
+	}
+	img.services-header-img {
+		height: 4rem;
+		margin-bottom: 2rem;
 	}
 }
 
 .services-list {
-	border-top: .2rem solid $black;
-	border-bottom: .2rem solid $black;
+	border-top: .25rem solid $gold;
+	border-bottom: .25rem solid $gold;
+	box-shadow: $box-shadow-med;
 	li {
 		font-family: 'Brown Bold', sans-serif;
-		padding: 1.6rem 1.8rem;
+		padding: 1.7rem 1.8rem 1.5rem 1.8rem;
 		margin: 0;
 		display: flex;
 		justify-content: space-between;
@@ -29,9 +69,83 @@
 		.txt-regular {
 			letter-spacing: .05rem;
 			font-size: 1.5rem;
+			text-align: right;
 		}
+	}
+	li:nth-child(even) {
+		background: white;
 	}
 	li:nth-child(odd) {
 		background: $off-gold;
+	}
+}
+
+
+.color-consult {
+	font-family: 'Brown Bold', sans-serif;
+	padding: 1.7rem 1.8rem 1.5rem 1.8rem;
+	margin: 0 -.6rem;
+	background: $black;
+	color: white;
+	.color-consult--pricing {
+		display: flex;
+		justify-content: space-between;
+		color: $gold;
+		margin-bottom: .8rem;
+		.txt-bold {
+			text-transform: uppercase;
+			letter-spacing: .2rem;
+			font-size: 1.4rem;
+		}
+		.txt-regular {
+			letter-spacing: .05rem;
+			font-size: 1.5rem;
+			text-align: right;
+		}
+	}
+	p {
+		color: white;
+		margin: 0;
+	}
+}
+
+@media only screen and (max-width: 780px) {
+	.color-consult {
+		margin: 0;
+	}
+}
+
+hr#services-gold-bar {
+	position: absolute;
+	top: 0;
+	z-index: 1;
+}
+
+// Paint images
+
+img#paint-stroke-1 {
+	position: absolute;
+	top: 0;
+	right: 0;
+	width: 33%;
+	z-index: -1;
+}
+
+img#paint-stroke-2 {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	z-index: -1;
+}
+
+@media only screen and (max-width: 700px) {
+	img#paint-stroke-2 {
+		width: 66%;
+	}
+}
+
+@media only screen and (max-width: 880px) {
+	img#paint-stroke-1 {
+		width: 50%;
 	}
 }

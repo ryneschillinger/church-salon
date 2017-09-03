@@ -10,7 +10,7 @@ export class ServicesComponent {
 	cuts = [
 		{ name: "Women's Haircut", price: '$65' },
 		{ name: "Men's Haircut", price: '$43' },
-		{ name: 'Bang Trim / Neck Cleanup', price: 'FREE' },
+		{ name: 'Bang Trim / Neck Cleanup', price: 'On the House' },
 	]
 
 	color = [
@@ -24,7 +24,6 @@ export class ServicesComponent {
 		{ name: 'Toning/Colorbalancing', price: '$35' },
 		{ name: 'Express Toning', price: '$25' },
 		{ name: 'Conditioning Treatment', price: '$20' },
-		{ name: 'Finish', price: 'FREE' },
 		{ name: 'Brazilian Blowout', price: 'Price Varies' },
 	]
 }

@@ -75,6 +75,13 @@ h6 {
 	letter-spacing: .05rem;
 }
 
+p {
+	font-size: 1.6rem;
+	line-height: 1.4;
+	letter-spacing: .05rem;
+	font-family: 'Brown Light', sans-serif;
+}
+
 .txt-gold {
 	color: $gold !important;
 }
@@ -162,6 +169,12 @@ ul {
 	}
 }
 
+@media only screen and (max-width: 780px) {
+	ul {
+		margin: 0;
+	}
+}
+
 /*-------- SECTION DIVIDERS --------*/
 
 .section-divider {
@@ -172,7 +185,7 @@ ul {
 	}
 	.playfair-divider {
 		font-size: 2rem;
-		margin: 0 1rem 0 1.8rem;
+		margin: 0 1rem 0 1.5rem;
 	}
 	h6 {
 		font-family: 'Brown Italic', sans-serif;

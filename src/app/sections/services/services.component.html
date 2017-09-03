@@ -1,14 +1,30 @@
 <section id="services">
-	<hr class="hr-gold-thick"/>
+	<hr class="hr-gold-thick" id="services-gold-bar"/>
+
 	<div class="container section-padding">
+
+		<!-- Section divider -->
+		<div class="section-divider">
+			<img src="../../../assets/octopus.png" class="octopus-icon" alt="salon services">
+			<h6>
+				<span class="playfair">02</span>
+				<span class="playfair-divider">/</span>
+				<span>SERVICES</span>
+			</h6>
+		</div>
 
 		<!-- Services -->
 		<div class="grid-row">
-			<div class="col-xs-2"></div>
-			<section class="col-xs-8">
+			<div class="col-xs-0 col-sm-2"></div>
+			<section class="col-xs-12 col-sm-8">
 
+				<!-- Cuts -->
 				<div class="services-type">
-					<h2>CUTS</h2>
+					<div class="section-header">
+						<h2>CUTS</h2>
+						<img src="../../assets/cuts.svg" alt="cuts" class="services-header-img">
+					</div>
+					<!-- List of services -->
 					<ul class="services-list">
 						<li *ngFor="let service of cuts; let i = index">
 							<span class="txt-bold">{{service.name}}</span>
@@ -17,8 +33,23 @@
 					</ul>
 				</div>
 
-				<div class="services-type">
-					<h2>COLOR</h2>
+				<!-- Color -->
+				<div class="services-type" style="margin-bottom: 7.5rem;">
+					<div class="section-header">
+						<h2>COLOR</h2>
+						<img src="../../assets/color.png" alt="color" class="services-header-img">
+					</div>
+					<div class="color-consult">
+						<div class="color-consult--pricing">
+							<span class="txt-bold">Color Consultation</span>
+							<span class="txt-regular">On the House</span>
+						</div>
+						<p>
+							Want new color? Is change scary? Had bad color experiences at another place? 
+							Not sure if what you want is possible? Come in for a free consultation to have your questions answered before booking your color with me.
+						</p>
+					</div>
+					<!-- List of services -->
 					<ul class="services-list">
 						<li *ngFor="let service of color; let i = index">
 							<span class="txt-bold">{{service.name}}</span>
@@ -29,8 +60,11 @@
 
 
 			</section>
-			<div class="col-xs-2"></div>
+			<div class="col-xs-0 col-sm-2"></div>
 		</div>
 
 	</div>
+	<!-- Paint stroke images -->
+	<img src="../../assets/paint-stroke-1.png" alt="beautiful paint" id="paint-stroke-1">
+	<img src="../../assets/paint-stroke-2.png" alt="more beautiful paint" id="paint-stroke-2">
 </section>
