@@ -10,6 +10,7 @@ import { Component, ViewEncapsulation, OnInit } from '@angular/core';
   	'../styles/church_global-styles.scss',
   	'../styles/church_vars.scss',
     '../styles/church_grid.scss',
+    '../../node_modules/snazzy-info-window/dist/snazzy-info-window.css',
   ],
   encapsulation: ViewEncapsulation.None 
 })
