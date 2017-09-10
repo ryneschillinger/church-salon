@@ -4,10 +4,12 @@
 	margin: 0;
 	min-height: 500px;
 	padding: 1.3rem;
+	background: -webkit-linear-gradient(315deg, #EDCB84, #C8A059);
+	background: -o-linear-gradient(315deg, #EDCB84, #C8A059);
 	background: linear-gradient(135deg, #EDCB84, #C8A059);
-	box-shadow: 0 0 6rem rgba(44,44,44,.32);
+	-webkit-box-shadow: 0 0 6rem rgba(44,44,44,.32);
+	        box-shadow: 0 0 6rem rgba(44,44,44,.32);
 }
-
 
 #salon-info-contact,
 #salon-info-map {
@@ -15,9 +17,15 @@
 }
 
 #salon-info-contact {
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
-	justify-content: center;
-	align-items: center;
+	-webkit-box-pack: center;
+	    -ms-flex-pack: center;
+	        justify-content: center;
+	-webkit-box-align: center;
+	    -ms-flex-align: center;
+	        align-items: center;
 	background: white;
 	padding: 5rem 1rem 3rem 1rem;
 	-webkit-box-shadow: 0 2px 8px 0 rgba(54,54,54,0.10);
@@ -45,16 +53,24 @@
 	}
 
 	.section-divider {
+		display: -webkit-box;
+		display: -ms-flexbox;
 		display: flex;
-		justify-content: center;
-		align-items: center;
+		-webkit-box-pack: center;
+		    -ms-flex-pack: center;
+		        justify-content: center;
+		-webkit-box-align: center;
+		    -ms-flex-align: center;
+		        align-items: center;
 		img.shark-icon {
 			position: absolute;
 			height: 10rem;
 		}
 		h6 {
 			z-index: 2;
-			transform: translateY(-1rem);
+			-webkit-transform: translateY(-1rem);
+			    -ms-transform: translateY(-1rem);
+			        transform: translateY(-1rem);
 		}
 		margin-bottom: -.1rem;
 	}
@@ -63,11 +79,20 @@
 		.playfair-divider {
 			margin: 0 .5rem;
 		}
-		font-size: 1.6rem;
 		h5, span {
 			margin: 0;
-			line-height: 1.2;
+			line-height: 1.5;
 		}
+		h5 {
+			font-size: 1.4rem;
+			font-family: 'Brown Bold', sans-serif;
+			letter-spacing: .3rem;
+			text-transform: uppercase;
+			margin: .2rem 0 -.2rem 0;
+		}
+		span {
+			font-size: 1.6rem;
+		} 
 	}
 }
 
@@ -76,9 +101,15 @@
 }
 
 #sola-message {
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
-	justify-content: flex-start !important;
-	align-items: flex-start !important;
+	-webkit-box-pack: start !important;
+	    -ms-flex-pack: start !important;
+	        justify-content: flex-start !important;
+	-webkit-box-align: start !important;
+	    -ms-flex-align: start !important;
+	        align-items: flex-start !important;
 	margin-top: 2rem;
 	margin-left: -.1rem;
 	img#sola-logo {

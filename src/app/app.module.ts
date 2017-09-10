@@ -18,6 +18,7 @@ import { SiteFooterComponent } from './core/site-footer/site-footer.component';
 import { HeroComponent } from './sections/hero/hero.component';
 import { ServicesComponent } from './sections/services/services.component';
 import { SalonInfoComponent } from './sections/salon-info/salon-info.component';
+import { BookNowComponent } from './sections/book-now/book-now.component';
 // Shared
 import { GoogleMapComponent } from './shared/google-map/google-map.component';
 
@@ -28,6 +29,7 @@ export const components = [
   HeroComponent,
   ServicesComponent,
   SalonInfoComponent,
+  BookNowComponent,
   GoogleMapComponent,
 ]
 

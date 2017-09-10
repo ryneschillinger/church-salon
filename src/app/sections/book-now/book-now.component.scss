@@ -1,0 +1,68 @@
+@import '../../../styles/church_vars.scss';
+
+#book-now {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-pack: center;
+	    -ms-flex-pack: center;
+	        justify-content: center;
+	-webkit-box-align: center;
+	    -ms-flex-align: center;
+	        align-items: center;
+	background: url(../../../assets/paint_abstract.jpg);
+	background-position: center;
+	background-size: 100% 100%;
+	background-repeat: no-repeat;
+	min-height: 52rem;
+	#book-now-message {
+		max-width: 60rem;
+		color: white;
+
+		h3, h4 {
+			text-transform: uppercase;
+			text-align: center;
+			line-height: 1;
+			margin: 0;
+		}
+
+		#phone-num a {
+			text-decoration: none;
+			border-bottom: .2rem solid $green;
+			color: $green;
+			-webkit-transition: $transition;
+			-o-transition: $transition;
+			transition: $transition;
+			&:hover {
+				color: $green-hover;
+				border-bottom: .2rem solid $green-hover;
+			}
+		}
+
+		p {
+			margin: 3rem 0;
+		}
+
+		p#cta {
+			text-align: center;
+			margin: 0 0 .4rem 0;
+		}
+
+		.playfair-divider {
+			margin: 0 .5rem;
+		}
+
+	}
+}
+
+@media only screen and (max-width: 860px) {
+	#book-now {
+		background-size: 160% 100%;
+	}
+}
+
+@media only screen and (max-width: 480px) {
+	#book-now {
+		background-size: 200% 100%;
+	}
+}

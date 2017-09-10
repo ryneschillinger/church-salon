@@ -89,12 +89,15 @@ h6 {
 p {
 	font-size: 1.6rem;
 	line-height: 1.4;
-	letter-spacing: .05rem;
 	font-family: 'Brown Light', sans-serif;
 }
 
 .txt-gold {
 	color: $gold !important;
+}
+
+.txt-white {
+	color: white !important;
 }
 
 .txt-light {
@@ -119,6 +122,7 @@ p {
 
 a {
 	cursor: pointer;
+	color: inherit;
 }
 
 button {
@@ -149,6 +153,25 @@ button.btn-secondary--white {
 	color: white;
 	&:hover {
 		background: white;
+		color: $black;
+	}
+}
+
+button.btn-primary--green {
+	background: $green;
+	color: $black;
+	transition-duration: $transition; 
+	&:hover {
+		background: $green-hover;
+	}
+}
+
+button.btn-secondary--green {
+	background: none;
+	border: .2rem solid $green;
+	color: $green;
+	&:hover {
+		background: $green;
 		color: $black;
 	}
 }
