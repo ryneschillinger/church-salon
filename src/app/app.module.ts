@@ -7,6 +7,8 @@ import { RouterModule, Routes } from '@angular/router';
 // Map dependencies
 import { AgmCoreModule } from '@agm/core';
 import { AgmSnazzyInfoWindowModule } from '@agm/snazzy-info-window';
+// Page Scroll
+import { Ng2PageScrollModule } from 'ng2-page-scroll';
 
 
 /*---------- COMPONENTS ----------*/
@@ -52,6 +54,7 @@ const modules = [
     apiKey: 'AIzaSyDBDh4aMyN0E7sNhRT95I56qjduVCkhsH4'
   }),
   AgmSnazzyInfoWindowModule,
+  Ng2PageScrollModule,
 ];
 
 @NgModule({

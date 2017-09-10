@@ -9,14 +9,14 @@ export class NavBarComponent {
 
 	links = [
 		{
-			name: "Salon Info",
-			pageAnchor: "info",
-			highlighted: true,
-		},
-		{
 			name: "Services",
 			pageAnchor: "services",
 			highlighted: false,
+		},	
+		{
+			name: "Salon Info",
+			pageAnchor: "info",
+			highlighted: true,
 		},
 		{
 			name: "The Stylist",

@@ -1,13 +1,28 @@
 <nav id="nav-bar">
 	<div class="container">
 		<div class="nav-logo">
-			<a href="#hero">
+			<a pageScroll [pageScrollDuration]="400" href="#home">
 				<img src="../../../assets/logo_gradient.svg" alt="CHURCH salon logo" id="logo-desktop">
 			</a>
 		</div>
 		<div class="nav-links">
-			<a *ngFor="let link of links; let i = index;" [ngClass]="{'nav-section-highlight': link.highlighted === true}" href="#{{link.pageAnchor}}">{{link.name}}</a>
-			<button class="btn-primary">Book Now</button>
+			<a 
+			pageScroll 
+			[pageScrollDuration]="400" 
+			[pageScrollOffset]="68"
+			*ngFor="let link of links; let i = index;" 
+			[ngClass]="{'nav-section-highlight': link.highlighted === true}" 
+			href="#{{link.pageAnchor}}">
+				{{link.name}}
+			</a>
+			<button 
+			pageScroll 
+			[pageScrollDuration]="400" 
+			[pageScrollOffset]="68" 
+			class="btn-primary" 
+			href="#book-now">
+				Book Now
+			</button>
 		</div>
 	</div>
 </nav>
