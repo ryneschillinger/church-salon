@@ -10,12 +10,12 @@ export class GoogleMapComponent {
 	// Map
 	lat: number = 47.6270081;
 	lng: number = -117.4005177;
-	zoom: number = 17;
+	zoom: number = 16;
 	iconUrl = {
 		url: '../../assets/map-marker.svg',
 		scaledSize: {
-		  height: 65,
-		  width: 94
+		  height: 60,
+		  width: 85
 		}
 	}
 

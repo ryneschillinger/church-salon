@@ -17,6 +17,7 @@ import { SiteFooterComponent } from './core/site-footer/site-footer.component';
 // Sections
 import { HeroComponent } from './sections/hero/hero.component';
 import { ServicesComponent } from './sections/services/services.component';
+import { SalonInfoComponent } from './sections/salon-info/salon-info.component';
 // Shared
 import { GoogleMapComponent } from './shared/google-map/google-map.component';
 
@@ -26,6 +27,7 @@ export const components = [
   SiteFooterComponent,
   HeroComponent,
   ServicesComponent,
+  SalonInfoComponent,
   GoogleMapComponent,
 ]
 

@@ -9,7 +9,9 @@ html {
 }
 
 body * {
-	font-family: 'Brown Regular', sans-serif;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	-webkit-text-stroke: 0.2px;
 }
 
 body {
@@ -96,15 +98,20 @@ p {
 }
 
 .txt-light {
-	font-family: 'Brown Light', sans-serif;
+	font-family: 'Brown Light', sans-serif !important;
 }
 
 .txt-regular {
-	font-family: 'Brown Regular', sans-serif;
+	font-family: 'Brown Regular', sans-serif !important;
 }
 
 .txt-bold {
-	font-family: 'Brown Bold', sans-serif;
+	font-family: 'Brown Bold', sans-serif !important;
+}
+
+.txt-allcaps {
+	text-transform: uppercase;
+	letter-spacing: .3rem;
 }
 
 
@@ -157,6 +164,10 @@ hr {
   background-color: $black;
   height: 1px;
   margin: 0;
+}
+
+hr.hr-gold {
+	background: $gold;
 }
 
 hr.hr-gold-thick {

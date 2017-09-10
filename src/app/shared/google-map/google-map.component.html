@@ -1,6 +1,16 @@
-<agm-map [latitude]="lat" [longitude]="lng" [zoom]="zoom" [styles]="styles" style="height: 500px;">
+<agm-map 
+  [latitude]="lat" 
+  [longitude]="lng" 
+  [zoom]="zoom" 
+  [draggable]="false" 
+  [draggableCursor]="false" 
+  [panControl]="false" 
+  [streetViewControl]="false" 
+  [streetViewControlOptions]="false" 
+  [styles]="styles" 
+  style="height: 500px;">
   
-  <agm-marker [latitude]="lat" [longitude]="lng" [iconUrl]="iconUrl" style="height: 64px;">
+  <agm-marker [latitude]="lat" [longitude]="lng" [iconUrl]="iconUrl">
       <agm-snazzy-info-window 
         [padding]="padding"
         [borderRadius]="borderRadius" 
@@ -11,7 +21,7 @@
         <ng-template class="map-info-window">
           <h5 class="txt-bold">C H U R C H</h5>
           <span class="txt-light">802 E 29th Ave, Suite 4</span>
-          <span class="txt-light">Spokane, Washington 99203</span>
+          <span class="txt-light">Spokane, WA 99203</span>
         </ng-template>
       </agm-snazzy-info-window>
     </agm-marker>

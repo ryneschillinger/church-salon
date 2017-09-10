@@ -1,0 +1,92 @@
+@import '../../../styles/church_vars.scss';
+
+#salon-info-container {
+	margin: 0;
+	min-height: 500px;
+	padding: 1.3rem;
+	background: linear-gradient(135deg, #EDCB84, #C8A059);
+	box-shadow: 0 0 6rem rgba(44,44,44,.32);
+}
+
+
+#salon-info-contact,
+#salon-info-map {
+	padding: 0;
+}
+
+#salon-info-contact {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background: white;
+	padding: 5rem 1rem 3rem 1rem;
+	-webkit-box-shadow: 0 2px 8px 0 rgba(54,54,54,0.10);
+	        box-shadow: 0 2px 8px 0 rgba(54,54,54,0.10);
+	z-index: 2;
+
+	#salon-info-contact-container {
+		width: 92%;
+		max-width: 45.5rem;
+		padding: 0;
+		margin: 0;
+		.grid-row {
+			margin: 1.6rem 0; 
+			padding: 0;
+			.col-xs-4, 
+			.col-xs-8 {
+				margin: 0; 
+				padding: 0;
+			}
+		}
+	}
+
+	hr {
+		margin: 2rem 0;
+	}
+
+	.section-divider {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		img.shark-icon {
+			position: absolute;
+			height: 10rem;
+		}
+		h6 {
+			z-index: 2;
+			transform: translateY(-1rem);
+		}
+		margin-bottom: -.1rem;
+	}
+
+	.contact-info {
+		.playfair-divider {
+			margin: 0 .5rem;
+		}
+		font-size: 1.6rem;
+		h5, span {
+			margin: 0;
+			line-height: 1.2;
+		}
+	}
+}
+
+#salon-info-map {
+	overflow: hidden;
+}
+
+#sola-message {
+	display: flex;
+	justify-content: flex-start !important;
+	align-items: flex-start !important;
+	margin-top: 2rem;
+	margin-left: -.1rem;
+	img#sola-logo {
+		margin-right: 1.6rem;
+		height: 6.4rem;
+		width: 6.4rem;
+	}
+	p {
+		margin: 0;
+	}
+}
