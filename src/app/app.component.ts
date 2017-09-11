@@ -16,4 +16,13 @@ import { Component, ViewEncapsulation, OnInit } from '@angular/core';
 })
 export class AppComponent {
   title = 'app';
+
+  enter() {
+    console.log('Track scroll enter is working!');
+  }
+  
+  leave() {
+    console.log('Track scroll leave is working too!');
+  }
+  
 }

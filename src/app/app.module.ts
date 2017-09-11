@@ -11,6 +11,9 @@ import { AgmSnazzyInfoWindowModule } from '@agm/snazzy-info-window';
 import { Ng2PageScrollModule } from 'ng2-page-scroll';
 // Parallax
 import { ng2Parallax } from 'ang2-parallax/ng2parallax';
+// Track Scroll Position
+import { Ng2TrackScrollModule } from 'ng2-track-scroll'; 
+
 
 
 /*---------- COMPONENTS ----------*/
@@ -57,6 +60,7 @@ const modules = [
   }),
   AgmSnazzyInfoWindowModule,
   Ng2PageScrollModule,
+  Ng2TrackScrollModule.forRoot()
 ];
 
 @NgModule({

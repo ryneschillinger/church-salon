@@ -26,4 +26,8 @@ export class ServicesComponent {
 		{ name: 'Conditioning Treatment', price: '$20' },
 		{ name: 'Brazilian Blowout', price: 'Price Varies' },
 	]
+
+	enter() {
+	  console.log('Track scroll enter is working!');
+	}
 }
