@@ -9,6 +9,8 @@ import { AgmCoreModule } from '@agm/core';
 import { AgmSnazzyInfoWindowModule } from '@agm/snazzy-info-window';
 // Page Scroll
 import { Ng2PageScrollModule } from 'ng2-page-scroll';
+// Parallax
+import { ng2Parallax } from 'ang2-parallax/ng2parallax';
 
 
 /*---------- COMPONENTS ----------*/
@@ -60,9 +62,10 @@ const modules = [
 @NgModule({
   declarations: [
     ...components,
+    ng2Parallax,
   ],
   imports: [...modules,],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
 export class AppModule { }
