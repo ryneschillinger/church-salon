@@ -1,0 +1,62 @@
+@import '../../../styles/church_vars.scss';
+
+#stylist-container {
+	position: relative;
+	min-height: 80rem;
+
+	#stylist-bio {
+		#halo {
+			background: $gold;
+			height: 1.2rem;
+			width: 7.4rem;
+			margin: 0 0 .9rem .8rem;
+		}
+
+		mix-blend-mode: multiply;
+		h1 {
+			margin: 0 0 0-.2rem;
+			line-height: .9;
+			opacity: .85;
+		}
+
+		img#paint-streak {
+			width: 50rem;
+			height: 1.2rem;
+			transform: rotate(-10deg) translateY(-3.4rem);
+			opacity: .95;
+		}
+
+		.section-divider {
+			display: flex;
+			justify-content: flex-start;
+			align-items: center;
+			margin: 4.5rem 0 6rem .4rem;
+
+			h6 {
+				position: relative;
+				margin-left: 2.2rem;
+				letter-spacing: .9rem;
+			}
+			.playfair-divider {
+				margin: 0 .7rem 0 1.1rem;
+			}
+			img#whale-icon {
+				position: absolute;
+				width: 13.2rem;
+				height: auto;
+				transform: translateY(-.4rem);
+			}
+		}
+
+	}
+
+	#corinne-hero-img {
+		width: 100%; 
+		height: auto; 
+		margin-bottom: -3px;
+		position: absolute;
+		top: 0;
+		left: 0;
+		z-index: -1;
+	}
+}

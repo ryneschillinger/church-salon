@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { ServicesComponent } from '../../sections/services/services.component';
 
 @Component({
   selector: 'nav-bar',
@@ -16,7 +17,7 @@ export class NavBarComponent {
 		{
 			name: "Salon Info",
 			pageAnchor: "info",
-			highlighted: true,
+			highlighted: false,
 		},
 		{
 			name: "The Stylist",
@@ -29,5 +30,8 @@ export class NavBarComponent {
 			highlighted: false,
 		},
 	]
+
+
+
 
 }
