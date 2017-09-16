@@ -25,3 +25,55 @@
 	}
 
 }
+
+#policies-header-column {
+	display: flex;
+	justify-content: flex-end;
+	align-items: flex-start;
+
+	.section-divider {
+		transform: rotate(90deg) translateY(-3.2rem);
+		display: flex;
+		justify-content: flex-start;
+		align-items: center;
+		margin-top: 16rem;
+
+		h6 {
+			position: relative;
+			margin-left: 2.2rem;
+			letter-spacing: .9rem;
+			white-space: nowrap;
+		}
+		.playfair-divider {
+			margin: 0 1rem 0 1.5rem;
+		}
+		img#starfish-icon {
+			position: absolute;
+			width: 6.8rem;
+			height: auto;
+			margin-left: 4rem;
+		}
+	}
+}
+
+#color-bars-column {
+
+	display: flex;
+	justify-content: flex-end;
+	align-items: flex-start;
+
+	img#color-bars-policies {
+		margin-top: 9.9rem;
+		margin-right: .6rem;
+		height: 1.1rem;
+	}
+}
+
+.policy {
+	h5 {
+		margin: 3rem 0 0 0;
+	}
+	p {
+		margin: .5rem 0 0 0;
+	}
+}
