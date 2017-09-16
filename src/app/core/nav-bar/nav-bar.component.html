@@ -5,13 +5,12 @@
 				<img src="../../../assets/logo_gradient.svg" alt="CHURCH salon logo" id="logo-desktop">
 			</a>
 		</div>
-		<div class="nav-links">
+		<div class="nav-links hover-halo">
 			<a 
 			pageScroll 
 			[pageScrollDuration]="400" 
 			[pageScrollOffset]="68"
 			*ngFor="let link of links; let i = index;" 
-			[ngClass]="{'nav-section-highlight': link.highlighted === true}" 
 			href="#{{link.pageAnchor}}">
 				{{link.name}}
 			</a>
@@ -19,7 +18,7 @@
 			pageScroll 
 			[pageScrollDuration]="400" 
 			[pageScrollOffset]="68" 
-			class="btn-primary" 
+			class="btn--chop btn-primary" 
 			href="#book-now">
 				Book Now
 			</button>

@@ -78,7 +78,7 @@ h4 {
 }
 
 h5 {
-	font-size: 1.6rem;
+	font-size: 1.4rem;
 	letter-spacing: .05rem;
 }
 
@@ -135,88 +135,48 @@ button {
 	padding: 1.1rem 1.1rem .9rem 1.3rem;
 	margin: 0;
 	border: none;
+	background: none;
+	vertical-align: middle;
+	position: relative;
+	z-index: 1;
 	cursor: pointer;
 	transition-duration: $transition; 
 
 	a {
 		text-decoration: none !important;
 	}
+
+	:focus {
+		outline: none;
+	}
+
+	span {
+		vertical-align: middle;
+	}
 }
 
-button.btn-primary {
+.btn-primary {
 	background: $gold;
 	color: white;
-	transition-duration: $transition; 
-	&:hover {
-		background: $gold-hover;
-	}
 }
-
-button.btn-secondary--white {
-	background: none;
+.btn-secondary--white {
 	border: .2rem solid white;
 	color: white;
-	&:hover {
-		background: white;
-		color: $black;
-	}
 }
-
-button.btn-primary--green {
-	background: $green;
-	color: $black;
-	transition-duration: $transition; 
-	&:hover {
-		background: $green-hover;
-	}
+.btn-secondary--gold {
+	border: .2rem solid $gold;
+	color: $gold;
 }
-
-button.btn-secondary--green {
-	background: none;
-	border: .2rem solid $green;
-	color: $green;
-	&:hover {
-		background: $green;
-		color: $black;
-	}
-}
-
-/* Wayra */
-.button {
-	border: none;
-	background: none;
-	vertical-align: middle;
-	position: relative;
-	z-index: 1;
-	-webkit-backface-visibility: hidden;
-	-moz-osx-font-smoothing: grayscale;
-}
-.button:focus {
-	outline: none;
-}
-.button > span {
-	vertical-align: middle;
-}
-.button--border-thin {
-	border: 1px solid white;
-	color: white;
-}
-.button--border-medium {
-	border: 2px solid white;
-	color: white;
-}
-.button--border-thick {
-	border: 3px solid white;
-	color: white;
-}
-.button--wayra {
+.btn--chop {
 	overflow: hidden;
-	-webkit-transition: border-color 0.3s, color 0.3s;
-	transition: border-color 0.3s, color 0.3s;
+	-webkit-transition: border-color 0.5s, color 0.5s;
+	transition: border-color 0.5s, color 0.5s;
 	-webkit-transition-timing-function: cubic-bezier(0.2, 1, 0.3, 1);
 	transition-timing-function: cubic-bezier(0.2, 1, 0.3, 1);
 }
-.button--wayra::before {
+
+// Secondary button chop
+.btn--chop::before {
 	content: '';
 	position: absolute;
 	top: 0;
@@ -229,18 +189,15 @@ button.btn-secondary--green {
 	transform: rotate3d(0, 0, 1, -45deg) translate3d(0, -3em, 0);
 	-webkit-transform-origin: 0% 100%;
 	transform-origin: 0% 100%;
-	-webkit-transition: -webkit-transform 0.3s, opacity 0.3s, background-color 0.3s;
-	transition: transform 0.3s, opacity 0.3s, background-color 0.3s;
+	-webkit-transition: -webkit-transform 0.5s, opacity 0.5s, background-color 0.5s;
+	transition: transform 0.5s, opacity 0.5s, background-color 0.5s;
 }
-.button--wayra:hover {
-	color: #fff;
+.btn--chop:hover {
+	color: #fff !important;
 	border-color: $gold;
+	background: transparent !important;
 }
-.button--wayra.button--inverted:hover {
-	color: $gold;
-	border-color: #fff;
-}
-.button--wayra:hover::before {
+.btn--chop:hover::before {
 	opacity: 1;
 	background-color: $gold;
 	-webkit-transform: rotate3d(0, 0, 1, 0deg);
@@ -248,8 +205,18 @@ button.btn-secondary--green {
 	-webkit-transition-timing-function: cubic-bezier(0.2, 1, 0.3, 1);
 	transition-timing-function: cubic-bezier(0.2, 1, 0.3, 1);
 }
-.button--wayra.button--inverted:hover::before {
-	background-color: #fff;
+
+// Primary button chop
+.btn-primary.btn--chop::before {
+	background: white !important;
+}
+.btn-primary.btn--chop:hover {
+	color: white !important;
+	border-color: $gold !important;
+	background: $gold !important;
+}
+.btn-primary.btn--chop:hover::before {
+	background-color: #bc8b36 !important;
 }
 
 

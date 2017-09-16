@@ -7,10 +7,14 @@
 
 	#stylist-bio {
 		#halo {
-			background: $gold;
+			background: -webkit-gradient(linear, left top, right top, from(#EDCB84), to(#C8A059));
+			background: -webkit-linear-gradient(left, #EDCB84, #C8A059);
+			background: -o-linear-gradient(left, #EDCB84, #C8A059);
+			background: linear-gradient(to right, #EDCB84, #C8A059);
 			height: 1.2rem;
 			width: 7.4rem;
 			margin: 0 0 .9rem .8rem;
+			opacity: .85;
 		}
 
 		mix-blend-mode: multiply;

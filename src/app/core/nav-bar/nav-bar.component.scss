@@ -22,6 +22,12 @@ nav .container {
 	        align-items: center;
 }
 
+nav .nav-links {
+	display: flex;
+	align-items: center;
+	justify-content: flex-end;
+}
+
 nav .nav-links a {
 	font-family: 'Brown Bold', sans-serif;
 	text-transform: uppercase;
@@ -32,30 +38,65 @@ nav .nav-links a {
 	color: $black;
 	margin-right: 2.6rem;
 	padding: .7rem 0 .6rem 0;
-	-webkit-transition: $transition;
-	-o-transition: $transition;
-	transition: $transition;
-	&:hover {
-		color: $gold-hover;
-	}
+	position: relative;
+	display: inline-block;
+	// -webkit-transition: $transition;
+	// -o-transition: $transition;
+	// transition: $transition;
+	// &:hover {
+	// 	color: $gold-hover;
+	// }
 }
 
-.nav-section-highlight {
+.hover-halo a {
+	padding: 8px 0;
 	position: relative;
 }
 
-.nav-section-highlight:before {
-	content: '';
+.hover-halo a::after {
 	position: absolute;
-	width: calc(100% - 8px);
-	height: 2px;
+	top: 100%;
+	left: 0;
+	width: 100%;
+	height: .3rem;
 	background: -webkit-gradient(linear, left top, right top, from(#EDCB84), to(#C8A059));
 	background: -webkit-linear-gradient(left, #EDCB84, #C8A059);
 	background: -o-linear-gradient(left, #EDCB84, #C8A059);
 	background: linear-gradient(to right, #EDCB84, #C8A059);
-	top: -3px;
-	left: 0;
+	content: '';
+	opacity: 0;
+	-webkit-transition: opacity 0.3s, -webkit-transform 0.3s;
+	-moz-transition: opacity 0.3s, -moz-transform 0.3s;
+	transition: opacity 0.3s, transform 0.3s;
+	-webkit-transform: translateY(-23px);
+	-moz-transform: translateY(-23px);
+	transform: translateY(-23px);
 }
+
+.hover-halo a:hover::after,
+.hover-halo a:focus::after {
+	opacity: 1;
+	-webkit-transform: translateY(-33px);
+	-moz-transform: translateY(-33px);
+	transform: translateY(-33px);
+}
+
+// .nav-section-highlight {
+// 	position: relative;
+// }
+
+// .nav-section-highlight:before {
+// 	content: '';
+// 	position: absolute;
+// 	width: calc(100% - 8px);
+// 	height: 2px;
+// 	background: -webkit-gradient(linear, left top, right top, from(#EDCB84), to(#C8A059));
+// 	background: -webkit-linear-gradient(left, #EDCB84, #C8A059);
+// 	background: -o-linear-gradient(left, #EDCB84, #C8A059);
+// 	background: linear-gradient(to right, #EDCB84, #C8A059);
+// 	top: -3px;
+// 	left: 0;
+// }
 
 #logo-desktop {
 	height: 3.6rem;
@@ -87,3 +128,4 @@ nav .nav-links a {
 	-moz-box-shadow: 0 0 5rem .2rem rgba(44, 44, 44, 0.12);
 	box-shadow: 0 0 5rem .2rem rgba(44, 44, 44, 0.12);
 }
+
