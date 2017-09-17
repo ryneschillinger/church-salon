@@ -91,6 +91,15 @@ p {
 	font-size: 1.6rem;
 	line-height: 1.4;
 	font-family: 'Brown Light', sans-serif;
+
+	a {
+		font-family: 'Brown Bold', sans-serif !important;
+		color: $blue;
+		text-decoration: none;
+		&:hover {
+			text-decoration: underline;
+		}
+	}
 }
 
 .txt-gold {
@@ -146,7 +155,7 @@ button {
 		text-decoration: none !important;
 	}
 
-	:focus {
+	&:focus {
 		outline: none;
 	}
 

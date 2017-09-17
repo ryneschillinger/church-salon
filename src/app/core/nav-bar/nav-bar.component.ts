@@ -8,6 +8,8 @@ import { ServicesComponent } from '../../sections/services/services.component';
 })
 export class NavBarComponent {
 
+	mobileMenuOpen = false;
+
 	links = [
 		{
 			name: "Services",
