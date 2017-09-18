@@ -3,13 +3,15 @@
 		<div class="nav-logo">
 			<a pageScroll [pageScrollDuration]="400" href="#home">
 				<img src="../../../assets/logo_gradient.svg" alt="CHURCH salon logo" id="logo-desktop">
+				<img src="../../../assets/logo_stacked.svg" alt="CHURCH salon logo" id="logo-mobile">
+
 			</a>
 		</div>
-		<div class="nav-links hover-halo">
+		<div class="nav-links hover-halo" id="desktop-menu">
 			<a 
 			pageScroll 
 			[pageScrollDuration]="400" 
-			[pageScrollOffset]="68"
+			[pageScrollOffset]="66"
 			*ngFor="let link of links; let i = index;" 
 			href="#{{link.pageAnchor}}">
 				{{link.name}}
@@ -17,13 +19,13 @@
 			<button 
 			pageScroll 
 			[pageScrollDuration]="400" 
-			[pageScrollOffset]="68" 
+			[pageScrollOffset]="66" 
 			class="btn--chop btn-primary" 
 			href="#book-now">
 				Book Now
 			</button>
 		</div>
-		<span (click)="mobileMenuOpen = !mobileMenuOpen;">
+		<span (click)="mobileMenuOpen = !mobileMenuOpen;" id="mobile-menu">
 			<div class="mobile-menu-btn" [ngClass]="{'menu-open': mobileMenuOpen}">
 	          <span></span>
 	          <span></span>
@@ -34,13 +36,20 @@
 </nav>
 <div class="round-shadow"></div>
 
-<div id="mobile-menu" [ngClass]="{'show-mobile-menu': mobileMenuOpen}">
+<div id="mobile-menu-screen" [ngClass]="{'show-mobile-menu': mobileMenuOpen}">
 	<div class="container">
 		<div id="mobile-menu-links">
 			<h1 *ngFor="let link of links; let i = index;" >
-				<span class="playfair">0{{i+1}}</span>
+				<span class="playfair">0:{{i+1}}</span>
 				<span class="txt-gold playfair-divider">/</span>
-				<span>{{link.name}}</span>
+				<a 
+				pageScroll 
+				[pageScrollDuration]="400" 
+				[pageScrollOffset]="66" 
+				(click)="mobileMenuOpen = false" 
+				href="#{{link.pageAnchor}}">
+					{{link.name}}
+				</a>
 		</h1>
 		</div>
 	</div>
