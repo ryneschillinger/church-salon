@@ -1,7 +1,6 @@
 @import '../../../styles/church_vars.scss';
 
 footer {
-	background: white;
 	padding: 7rem 0 7.7rem 0;
 
 	.container {
@@ -38,7 +37,6 @@ footer {
 .footer-legal {
 	display: flex;
 	align-items: center;
-	color: $black;
 }
 
 .footer-social {
@@ -48,16 +46,33 @@ footer {
 		height: 2.6rem;
 		width: 2.6rem;
 		transition: $transition;
+		background: white;
 		&:hover {
-			-webkit-filter: drop-shadow(0 .2rem 1.5rem rgba(44,44,44,.25));
-			filter: drop-shadow(0 .2rem 1.5rem rgba(44,44,44,.25));
+			transform: translateY(-.8rem);
 		}
 	}
 	a {
-		transition: $transition;
-		&:hover {
-			filter: brightness(1.2);
-		}
+		text-decoration: none;
+		position: relative;
+	}
+	a:after {
+		content: '';
+		opacity: 0;
+		position: absolute;
+		bottom: .3rem;
+		left: 0;
+		width: 100%;
+		height: .1rem;
+		z-index: -1;
+		background: rgba(44,44,44,1);
+		transform: scale(1);
+		border-radius: 50%;
+		filter: blur(.2rem);
+		transition: opacity .5s, transform .7s;
+	}
+	a:hover:after {
+		opacity: .6;
+		transform: scale(.8);
 	}
 	a:not(:last-child) {
 		margin-right: .8rem;
