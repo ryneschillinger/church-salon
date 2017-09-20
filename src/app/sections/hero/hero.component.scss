@@ -79,6 +79,11 @@ h3.promise-copy {
 	max-width: 80%;
 }
 
+#seamonster-icon {
+	width: 13.5rem;
+	margin-bottom: -1rem;
+}
+
 // Re-order hero message and photo, story width
 
 @media only screen and (max-width: 880px) {
@@ -114,8 +119,8 @@ h3.promise-copy {
 	}
 
 	#hero-bkg {
-		height: 110rem !important;
-		max-height: 110rem !important;
+		height: 100rem !important;
+		max-height: 100rem !important;
 		clip-path: polygon(0 0, 100% 0, 100% 60%, 0% 100%);
 		-webkit-clip-path: polygon(0 0, 100% 0, 100% 60%, 0% 100%);
 	}
@@ -125,15 +130,15 @@ h3.promise-copy {
 		margin: 4rem 0 5rem 0;
 	}
 
-	.seamonster-icon {
-		width: 13.5rem;
-	}
-
 	.section-divider {
 		h6 {
 			margin: 1.1rem 0 1.4rem 0;
 			text-align: right;
 		}
+	}
+
+	#seamonster-icon {
+		margin-bottom: 0
 	}
 }
 
@@ -145,8 +150,8 @@ h3.promise-copy {
 
 	#hero-bkg {
 		top: -8rem !important;
-		height: 115rem !important;
-		max-height: 115rem !important;
+		height: 105rem !important;
+		max-height: 105rem !important;
 		clip-path: polygon(0 0, 100% 0, 100% 75%, 0% 100%);
 		-webkit-clip-path: polygon(0 0, 100% 0, 100% 75%, 0% 100%);
 	}
