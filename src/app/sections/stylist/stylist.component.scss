@@ -4,42 +4,63 @@
 	position: relative;
 	height: 66.5rem;
 	overflow: hidden;
+	background: url('../../../assets/corinne_horiz.jpg');
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: top center;
+
+	.container, .grid-row {
+		height: 100%;
+	}
 
 	#stylist-bio {
-		#halo {
-			background: -webkit-gradient(linear, left top, right top, from(#EDCB84), to(#C8A059));
-			background: -webkit-linear-gradient(left, #EDCB84, #C8A059);
-			background: -o-linear-gradient(left, #EDCB84, #C8A059);
-			background: linear-gradient(to right, #EDCB84, #C8A059);
-			height: 1.2rem;
-			width: 7.4rem;
-			margin: 0 0 .9rem .8rem;
-			opacity: .85;
-		}
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+		align-items: flex-start;
+		padding: 4.5rem 0 0 .4rem;
+		height: 80%;
+		width: 50%;
 
-		mix-blend-mode: multiply;
-		h1 {
-			margin: 0 0 0-.2rem;
-			line-height: .9;
-			opacity: .85;
-		}
+		.corinne-title {
+			mix-blend-mode: multiply;
 
-		img#paint-streak {
-			width: 50rem;
-			height: 1.2rem;
-			transform: rotate(-10deg) translateY(-3.4rem);
-			opacity: .95;
+			.halo {
+				background: -webkit-gradient(linear, left top, right top, from(#EDCB84), to(#C8A059));
+				background: -webkit-linear-gradient(left, #EDCB84, #C8A059);
+				background: -o-linear-gradient(left, #EDCB84, #C8A059);
+				background: linear-gradient(to right, #EDCB84, #C8A059);
+				height: 1.2rem;
+				width: 7.4rem;
+				margin: 0 0 .9rem .8rem;
+				opacity: .85;
+			}
+
+			h1 {
+				margin: 0 0 0-.2rem;
+				line-height: .9;
+				opacity: .85;
+			}
+
+			img#paint-streak {
+				width: 50rem;
+				height: 1.2rem;
+				transform: rotate(-10deg) translateY(-3.4rem);
+				opacity: .95;
+			}
+
 		}
 
 		.section-divider {
 			display: flex;
 			justify-content: flex-start;
 			align-items: center;
-			margin: 4.5rem 0 5rem .4rem;
+			flex-wrap: wrap;
+			mix-blend-mode: multiply;
 
 			h6 {
 				position: relative;
-				margin-left: 2.2rem;
+				margin-left: 3rem;
 				letter-spacing: .9rem;
 			}
 			.playfair-divider {
@@ -50,21 +71,53 @@
 				width: 13.4rem;
 				height: auto;
 				transform: translateY(-.4rem);
-				opacity: .8
-				;
+				opacity: .8;
+			}
+			img#arrow {
+				width: 4rem;
+				height: auto;
+				opacity: .7;
+				display: none;
+				flex-wrap: wrap;
+				margin: -1.5rem 0 0 4.5rem;
 			}
 		}
 
-	}
+		#about-corinne {
 
-	#corinne-hero-img {
-		width: 100%; 
-		height: auto; 
-		margin-bottom: -3px;
-		position: absolute;
-		top: 0;
-		left: 0;
-		z-index: -1;
+			.corinne-title {
+
+				.halo {
+					margin: 0 0 .3rem .2rem;
+					height: .4rem;
+					width: 2.6rem;
+				}
+
+				h1 {
+					font-size: 4rem;
+					letter-spacing: .3rem;
+				}
+
+				img#paint-streak {
+					width: 17.5rem;
+					height: .5rem;
+					transform: rotate(-10deg) translateY(-1.4rem);
+					opacity: .95;
+				}
+
+				margin: .6rem 0 1rem 0;
+				display: none;
+			}
+			background: rgba(255,255,255,.9);
+			box-shadow: $box-shadow-med;
+			padding: 1.2rem 1.5rem;
+			width: 85%;
+			margin-left: 1rem;
+			p {
+				margin: 0;
+			}
+		}
+
 	}
 }
 
@@ -74,16 +127,21 @@
 	overflow: hidden;
 	display: flex;
 	align-items: center;
+	background: url('../../../assets/cz_marching.jpg');
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
 
-	#corinne-colorzoom-img {
-		width: 100%; 
-		height: auto; 
-		margin-bottom: -3px;
-		position: absolute;
-		top: 0;
-		left: 0;
-		z-index: -1;
-	}
+
+	// #corinne-colorzoom-img {
+	// 	width: 100%; 
+	// 	height: auto; 
+	// 	margin-bottom: -3px;
+	// 	position: absolute;
+	// 	top: 0;
+	// 	left: 0;
+	// 	z-index: -1;
+	// }
 
 	#gold-box {
 		box-shadow: inset 0 0 0 13px $gold;
@@ -125,7 +183,7 @@
 	}
 
 	#blackbox {
-		background: rgba(22,22,22,.85);
+		background: rgba(22,22,22,.8);
 		position: absolute;
 		z-index: 1;
 		top: 0;
@@ -134,4 +192,113 @@
 		height: 100%;
 	}
 
+}
+
+@media only screen and (max-width: 1080px) {
+	#stylist-container {
+		background-position: top right -9.5rem !important;
+	}
+
+	#colorzoom-container {
+		background-position: center right -150px;
+	}
+
+	.corinne-title {
+		display: none;
+	}
+
+	#stylist-bio {
+		width: 50% !important;
+		height: 55% !important
+	}
+
+	#about-corinne {
+		.corinne-title {
+			display: block !important;
+		}
+		// p {
+		// 	margin: -14rem 0 0 0 !important;
+		// }
+	}
+}
+
+@media only screen and (max-width: 900px) {
+	#stylist-bio {
+
+		.section-divider {
+			max-width: 15rem;
+			// transform: translateY(10rem);
+
+			h6 {
+				display: flex;
+				flex-direction: column;
+				align-items: flex-start;
+				margin-left: 1rem !important;
+			}
+
+			#playfair-stylist {
+				margin: 7rem 0 1rem 0;
+
+				.playfair-divider {
+					margin: 0 0rem 0 .4rem;
+				}
+			}
+			img#whale-icon {
+				width: 11.5rem !important;
+			}
+		}
+	}
+
+	#stylist-bio {
+		width: 100% !important;
+		height: 80% !important;
+	}
+}
+
+@media only screen and (max-width: 780px) {
+
+	#blackbox {
+		width: 100% !important;
+	}
+
+	#colorzoom-container {
+		min-height: 50rem;
+		height: auto;
+		background-position: center right -100px;
+	}
+
+	#gold-box {
+		position: absolute !important;
+		top: 0 !important;
+		left: 0 !important;
+		width: 100% !important;
+		height: 100% !important;
+	}
+
+	img#colorzoom-logo {
+		width: 50%;
+	}
+
+	#colorzoom-story {
+		padding: 3.6rem !important;
+	}
+}
+
+@media only screen and (max-width: 660px) {
+	#stylist-container {
+		background-position: top right 33% !important;
+	}
+	#stylist-bio {
+		width: 100% !important;
+		height: 85% !important;
+	}
+}
+
+@media only screen and (max-width: 480px) {
+	img#whale-icon {
+		transform: translateY(-1.7rem) !important;
+	}
+	img#arrow {
+		display: block !important;
+	}
 }

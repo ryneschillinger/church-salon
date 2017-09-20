@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, AfterViewInit } from '@angular/core';
 
 @Component({
   selector: 'google-map',
@@ -12,10 +12,10 @@ export class GoogleMapComponent {
 	lng: number = -117.4005177;
 	zoom: number = 16;
 	iconUrl = {
-		url: '../../assets/map-marker.svg',
+		url: '../../assets/map-marker.png',
 		scaledSize: {
 		  height: 60,
-		  width: 85
+		  width: 52,
 		}
 	}
 
@@ -60,5 +60,6 @@ export class GoogleMapComponent {
       stylers: [{ visibility: "off" }]   
     },
   ]
+
 
 }

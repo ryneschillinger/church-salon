@@ -140,6 +140,7 @@ nav .nav-links a {
 
 #mobile-menu {
 	display: none;
+	cursor: pointer;
 }
 
 .mobile-menu-btn {
@@ -197,7 +198,7 @@ nav .nav-links a {
 }
 
 .menu-open span:nth-child(2) {
-	top: 15px;
+	top: 11px;
 	width: 0%;
 }
 
@@ -225,10 +226,24 @@ nav .nav-links a {
 	.container {
 		display: flex;
 		justify-content: center;
+		margin-bottom: 5%;
+	}
+
+	button.btn-primary {
+		font-size: 3rem;
+		padding: 1.4rem 1.5rem 1.5rem 1.9rem;
+		width: 100%;
+		margin-top: 1rem;
+		border: .4rem solid transparent;
+		letter-spacing: .3rem;
+
+		span {
+			white-space: nowrap;
+		}
 	}
 
 	h1 {
-		font-size: 6rem;
+		font-size: 5rem;
 		font-family: 'Brown Light', sans-serif;
 		line-height: 1;
 		text-transform: uppercase;
@@ -243,6 +258,11 @@ nav .nav-links a {
 		}
 	}
 
+	.playfair {
+		font-size: 3rem;
+		letter-spacing: .1rem;
+	}
+
 	.playfair-divider {
 		-webkit-text-stroke: 1px $gold;
 	}
@@ -255,18 +275,67 @@ nav .nav-links a {
 }
 
 @media only screen and (max-width: 880px) {
-	#logo-mobile,
 	#mobile-menu,
 	#mobile-menu-screen {
 		display: flex;
 	}
 
-	#logo-desktop,
 	#desktop-menu {
 		display: none;
 	}
 
 	nav {
-		padding: 1rem 0;
+		padding: 1.7rem 0;
 	}
+}
+
+@media only screen and (max-width: 560px) {
+
+	#mobile-menu-screen {
+		
+		.container {
+			justify-content: flex-start;
+		}
+
+		button.btn-primary {
+			font-size: 2rem;
+			padding: 1rem 1rem 1rem 1.4rem;
+			border: .3rem solid transparent;
+		}
+
+		h1 {
+			font-size: 3.8rem;
+			letter-spacing: .5rem !important;
+		}
+
+		.playfair {
+			font-size: 2rem;
+		}
+
+	}
+
+}
+
+@media only screen and (max-width: 480px) {
+	#logo-mobile {
+		display: flex;
+	}
+
+	#logo-desktop {
+		display: none;
+	}
+
+	nav {
+		padding: 1.2rem 0;
+	}
+
+
+}
+
+@media only screen and (max-width: 420px) {
+
+	h1 {
+		font-size: 3rem !important;
+	}
+
 }

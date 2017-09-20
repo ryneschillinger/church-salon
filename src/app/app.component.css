@@ -1,0 +1,15 @@
+.parallax-container {
+	min-height: 85rem;
+}
+
+.parallax {
+	margin-top: 10rem;
+}
+
+.parallax img.full-width {
+/*	width: 110%;
+	height: auto;*/
+/*	width: 100%;
+	height: auto;*/
+
+}

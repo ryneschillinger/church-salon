@@ -9,8 +9,6 @@ import { AgmCoreModule } from '@agm/core';
 import { AgmSnazzyInfoWindowModule } from '@agm/snazzy-info-window';
 // Page Scroll
 import { Ng2PageScrollModule } from 'ng2-page-scroll';
-// Parallax
-import { ng2Parallax } from 'ang2-parallax/ng2parallax';
 // Track Scroll Position
 import { Ng2TrackScrollModule } from 'ng2-track-scroll'; 
 
@@ -24,6 +22,8 @@ import { SiteFooterComponent } from './core/site-footer/site-footer.component';
 // Sections
 import { HeroComponent } from './sections/hero/hero.component';
 import { ServicesComponent } from './sections/services/services.component';
+import { MulletGangComponent } from './sections/mullet-gang/mullet-gang.component';
+import { InspirationComponent } from './sections/inspiration/inspiration.component';
 import { SalonInfoComponent } from './sections/salon-info/salon-info.component';
 import { StylistComponent } from './sections/stylist/stylist.component';
 import { PoliciesComponent } from './sections/policies/policies.component';
@@ -37,6 +37,8 @@ export const components = [
   SiteFooterComponent,
   HeroComponent,
   ServicesComponent,
+  MulletGangComponent,
+  InspirationComponent,
   SalonInfoComponent,
   StylistComponent,
   PoliciesComponent,
@@ -70,7 +72,6 @@ const modules = [
 @NgModule({
   declarations: [
     ...components,
-    ng2Parallax,
   ],
   imports: [...modules,],
   providers: [],

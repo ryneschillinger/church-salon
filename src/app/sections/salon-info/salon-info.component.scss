@@ -121,3 +121,10 @@
 		margin: 0;
 	}
 }
+
+@media only screen and (max-width: 780px) {
+	#salon-info-container {
+		display: flex;
+		flex-direction: column-reverse;
+	}
+}

@@ -26,32 +26,26 @@
 			margin: 0;
 		}
 
-		#phone-num a {
-			text-decoration: none;
-			padding: 0 0 .3rem .5rem;
-			border-bottom: .1rem solid $green;
-			color: $green;
-			-webkit-transition: $transition;
-			-o-transition: $transition;
-			transition: $transition;
-			&:hover {
-				color: $green-hover;
-				border-bottom: .1rem solid $green-hover;
-			}
-		}
-
-		p {
-			margin: 3rem 0;
-		}
-
 		#cta {
 			text-align: center;
-			margin: 0;
+			margin: 2rem 0 1rem 0;
 		}
-
-		.playfair-divider {
-			margin: 0 .7rem !important;
-			font-size: 2.3rem;
+		a {
+			text-decoration: none
+		}
+		button {
+			display: flex;
+			align-items: center;
+			padding: .8rem .9rem .7rem 1rem;
+			margin: 0 auto;
+			font-size: 1.5rem;
+			i {
+				font-size: 2rem;
+				margin-right: .6rem;
+			}
+			span {
+				transform: translateY(-1px);
+			}
 		}
 
 	}

@@ -11,7 +11,7 @@
 			<a 
 			pageScroll 
 			[pageScrollDuration]="400" 
-			[pageScrollOffset]="66"
+			[pageScrollOffset]="69"
 			*ngFor="let link of links; let i = index;" 
 			href="#{{link.pageAnchor}}">
 				{{link.name}}
@@ -19,7 +19,7 @@
 			<button 
 			pageScroll 
 			[pageScrollDuration]="400" 
-			[pageScrollOffset]="66" 
+			[pageScrollOffset]="69" 
 			class="btn--chop btn-primary" 
 			href="#book-now">
 				Book Now
@@ -40,17 +40,22 @@
 	<div class="container">
 		<div id="mobile-menu-links">
 			<h1 *ngFor="let link of links; let i = index;" >
-				<span class="playfair">0:{{i+1}}</span>
+				<span class="playfair txt-gold">0:{{i+1}}</span>
 				<span class="txt-gold playfair-divider">/</span>
 				<a 
 				pageScroll 
 				[pageScrollDuration]="400" 
-				[pageScrollOffset]="66" 
+				[pageScrollOffset]="69" 
 				(click)="mobileMenuOpen = false" 
 				href="#{{link.pageAnchor}}">
 					{{link.name}}
 				</a>
-		</h1>
+			</h1>
+			<a href="tel:509-995-5049">
+				<button class="btn--chop btn-primary">
+					<span>Book Now:</span> <span>509-995-5049</span>
+				</button>
+			</a>
 		</div>
 	</div>
 </div>

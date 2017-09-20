@@ -1,0 +1,61 @@
+@import '../../../styles/church_vars.scss';
+
+#mullet-gang-container {
+	position: relative;
+	overflow: hidden;
+	margin: 0;
+	padding: 0;
+	-webkit-box-shadow: 0 0 6rem rgba(44,44,44,.32);
+	        box-shadow: 0 0 6rem rgba(44,44,44,.32);
+}
+
+#mullet-message {
+	display: flex;
+	align-items: center;
+	z-index: 2;
+	margin-top: 10.8rem !important;
+	margin-bottom: 12rem !important;
+
+	h3 {
+		margin: 0;
+	}
+
+	p {
+		margin: 1.5rem 0 2.5rem 0;
+	}
+	.grid-row {
+		margin-right: 2.55%;
+	}
+}
+
+#mullet-backgrounds {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+
+	#mullet-bkg-stamps,
+	#mullet-bkg-img {
+		content: '';
+		height: 45rem;
+	}
+
+	#mullet-bkg-stamps {
+		background: url('../../../assets/mullet-stamps.jpg');
+		background-repeat: no-repeat;
+		background-size: cover;
+		background-position: center;
+	}
+
+	#mullet-bkg-img {
+		background: url('../../../assets/mullet.jpg');
+		background-repeat: no-repeat;
+		background-size: cover;
+		background-position: center;
+	}
+
+}
+
+
+

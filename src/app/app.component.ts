@@ -1,4 +1,5 @@
-import { Component, ViewEncapsulation, OnInit } from '@angular/core';
+import { Component, ViewEncapsulation, OnInit, AfterViewInit } from '@angular/core';
+declare var $: any;
 
 @Component({
   selector: 'app-root',
@@ -10,6 +11,7 @@ import { Component, ViewEncapsulation, OnInit } from '@angular/core';
   	'../styles/church_global-styles.scss',
   	'../styles/church_vars.scss',
     '../styles/church_grid.scss',
+    '../styles/font-awesome/font-awesome.scss',
     '../../node_modules/snazzy-info-window/dist/snazzy-info-window.css',
   ],
   encapsulation: ViewEncapsulation.None 
@@ -24,5 +26,12 @@ export class AppComponent {
   leave() {
     console.log('Track scroll leave is working too!');
   }
+
+  ngAfterViewInit() {
+    $(document).ready(function(){
+      $('.parallax').parallax();
+    });
+  }
+
   
 }

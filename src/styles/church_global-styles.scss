@@ -1,7 +1,6 @@
 @import './church_fonts.scss';
 @import './church_vars.scss';
 
-
 /*-------- GENERAL --------*/
 
 html {
@@ -167,6 +166,12 @@ button {
 .btn-primary {
 	background: $gold;
 	color: white;
+	border: .2rem solid transparent;
+}
+.btn-primary--green {
+	background: $green;
+	color: #1E0C55;
+	border: .2rem solid transparent;
 }
 .btn-secondary--white {
 	border: .2rem solid white;
@@ -175,6 +180,14 @@ button {
 .btn-secondary--gold {
 	border: .2rem solid $gold;
 	color: $gold;
+}
+.btn-secondary--black {
+	border: .2rem solid $black;
+	color: $black;
+}
+.btn-secondary--green {
+	border: .2rem solid $green;
+	color: $green;
 }
 .btn--chop {
 	overflow: hidden;
@@ -220,12 +233,25 @@ button {
 	background: white !important;
 }
 .btn-primary.btn--chop:hover {
-	color: white !important;
+	color: $gold !important;
 	border-color: $gold !important;
 	background: $gold !important;
 }
 .btn-primary.btn--chop:hover::before {
-	background-color: #bc8b36 !important;
+	background-color: white !important;
+}
+
+// Primary--green button chop
+.btn-primary--green.btn--chop::before {
+	background: #1E0C55 !important;
+}
+.btn-primary--green.btn--chop:hover {
+	color: $green !important;
+	border-color: $green !important;
+	background: $green !important;
+}
+.btn-primary--green.btn--chop:hover::before {
+	background-color: #1E0C55 !important;
 }
 
 
@@ -295,7 +321,37 @@ ul {
 
 
 .em-dash {
-	margin: 0 0 0 -3px;
+	margin: -.7rem 0 -.6rem -3px;
 	color: $gold;
 	line-height: 1;
+}
+
+/*-------- PARALLAX --------*/
+
+.parallax-container {
+  position: relative;
+  overflow: hidden;
+  height: 500px;
+}
+
+.parallax-container .parallax {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: -1;
+}
+
+.parallax-container .parallax img {
+  display: none;
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
+  -webkit-transform: translate3d(0, 0, 0);
+          transform: translate3d(0, 0, 0);
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
 }
