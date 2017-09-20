@@ -27,16 +27,17 @@
 	    -ms-flex-align: center;
 	        align-items: center;
 	background: white;
-	padding: 5rem 1rem 3rem 1rem;
+	padding: 0 1rem 0 1rem;
 	-webkit-box-shadow: 0 2px 8px 0 rgba(54,54,54,0.10);
 	        box-shadow: 0 2px 8px 0 rgba(54,54,54,0.10);
 	z-index: 2;
+	overflow-y: hidden;
 
 	#salon-info-contact-container {
 		width: 92%;
 		max-width: 45.5rem;
 		padding: 0;
-		margin: 0;
+		margin: 1rem 0 0 0;
 		.grid-row {
 			margin: 1.6rem 0; 
 			padding: 0;
@@ -83,7 +84,7 @@
 			margin: 0;
 			line-height: 1.5;
 		}
-		h5 {
+		h5.info-title {
 			font-size: 1.4rem;
 			font-family: 'Brown Bold', sans-serif;
 			letter-spacing: .3rem;
@@ -123,8 +124,40 @@
 }
 
 @media only screen and (max-width: 780px) {
+
+	#salon-info-contact {
+		padding: 3.5rem 1rem 3rem 1rem;
+	}
+
 	#salon-info-container {
 		display: flex;
 		flex-direction: column-reverse;
+	}
+}
+
+@media only screen and (max-width: 500px) {
+	#sola-message {
+		flex-direction: column;
+		align-items: center !important;
+
+		img#sola-logo {
+			margin-bottom: 1.5rem;
+			margin-right: 0 !important;
+			height: 7rem;
+			width: 7rem;
+		}
+		p {
+			margin: 0;
+		}
+	}
+}
+
+@media only screen and (max-width: 410px) {
+	h5.info-title {
+		letter-spacing: 0 !important;
+	}
+
+	.contact-info .col-xs-8 {
+		margin-left: 1rem;
 	}
 }

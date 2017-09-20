@@ -32,10 +32,10 @@
 	z-index: 1;
 }
 
-h2.hero-message {
-	font-family: 'Brown Light', sans-serif !important;
+#hero-message h2 {
 	color: white;
 	max-width: 50rem;
+	margin-right: 5vw;
 }
 
 #hero-image {
@@ -79,20 +79,76 @@ h3.promise-copy {
 	max-width: 80%;
 }
 
-@media only screen and (max-width: 860px) {
+// Re-order hero message and photo, story width
+
+@media only screen and (max-width: 880px) {
+
+	#hero {
+		padding-top: 12rem !important;
+	}
+
+	#hero-messaging {
+		flex-direction: column;
+		align-items: flex-start;
+
+		#hero-message {
+			width: 100% !important;
+			margin-bottom: 4.5rem;
+
+			h2 {
+				max-width: 100%;
+				margin-right: 0;
+			}
+		}
+
+		#hero-image {
+			display: flex;
+			align-self: center;
+		}
+	}
+
+	#hero-image {
+		width: 100% !important;
+		max-width: 48rem !important;
+		height: 48rem !important;
+	}
+
+	#hero-bkg {
+		height: 110rem !important;
+		max-height: 110rem !important;
+		clip-path: polygon(0 0, 100% 0, 100% 60%, 0% 100%);
+		-webkit-clip-path: polygon(0 0, 100% 0, 100% 60%, 0% 100%);
+	}
+
 	h3.promise-copy {
 		max-width: 100%;
-		margin: 6rem 0 7rem 0;
+		margin: 4rem 0 5rem 0;
+	}
+
+	.seamonster-icon {
+		width: 13.5rem;
+	}
+
+	.section-divider {
+		h6 {
+			margin: 1.1rem 0 1.4rem 0;
+			text-align: right;
+		}
 	}
 }
 
-.seamonster-icon {
-	width: 13.5rem;
-}
+@media only screen and (max-width: 480px) {
 
-.section-divider {
-	h6 {
-		margin: 1.1rem 0 1.4rem 0;
-		text-align: right;
+	#hero {
+		padding-top: 9.4rem !important;
 	}
+
+	#hero-bkg {
+		top: -8rem !important;
+		height: 115rem !important;
+		max-height: 115rem !important;
+		clip-path: polygon(0 0, 100% 0, 100% 75%, 0% 100%);
+		-webkit-clip-path: polygon(0 0, 100% 0, 100% 75%, 0% 100%);
+	}
+
 }

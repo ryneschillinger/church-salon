@@ -7,6 +7,11 @@
 	position: relative;
 	background: transparent;
 
+	.grid-row {
+		padding-left: .5rem;
+		padding-right: .5rem;
+	}
+
 	.section-divider {
 		position: relative;
 		display: flex;
@@ -17,8 +22,11 @@
 			height: 9.4rem;
 		}
 		h6 {
-			margin: 1.6rem 0 .5rem 3.4rem;
+			margin: 1.6rem 0 .5rem 3rem;
 			text-align: right;
+		}
+		.playfair-divider {
+			margin: 0 .7rem 0 1rem;
 		}
 	}
 
@@ -56,8 +64,8 @@
 }
 
 .services-list {
-	border-top: .25rem solid $gold;
-	border-bottom: .25rem solid $gold;
+	border-top: .2rem solid $gold;
+	border-bottom: .2rem solid $gold;
 	box-shadow: $box-shadow-med;
 	li {
 		font-family: 'Brown Bold', sans-serif;

@@ -5,10 +5,16 @@
 		<section id="hero-messaging">
 
 			<!-- Hero message -->
-			<div>
-				<h2 class="hero-message">This is a hair salon that focuses on haircolor and cutting hair and you can come just as you are.</h2>
+			<div id="hero-message">
+				<h2 class="hero-message txt-light">This is a hair salon that focuses on haircolor and cutting hair and you can come just as you are.</h2>
 				<button class="btn--chop btn-secondary--white">
-					<a href="#services">See Services</a>
+					<a 	
+					pageScroll 
+					[pageScrollDuration]="400" 
+					[pageScrollOffset]="69" 
+					href="#services">
+						See Services
+					</a>
 				</button>
 			</div>
 

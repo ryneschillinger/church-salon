@@ -128,7 +128,7 @@ nav .nav-links a {
 .round-shadow:before, .round-shadow:after{
 	content:"";
 	position:absolute;
-	bottom: 0; top: .5rem; left: 2rem; right: 2rem;
+	bottom: 0; top: .5rem; left: 0; right: 0;
 	z-index: -1;
 	border-radius: 50%/3rem;
 	-webkit-box-shadow: 0 0 5rem .2rem rgba(44, 44, 44, 0.12);

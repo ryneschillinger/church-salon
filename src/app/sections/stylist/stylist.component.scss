@@ -13,6 +13,11 @@
 		height: 100%;
 	}
 
+	.grid-row {
+		margin-left: -1.3rem;
+		margin-right: -1.7rem;
+	}
+
 	#stylist-bio {
 		display: flex;
 		flex-direction: column;
@@ -37,7 +42,7 @@
 			}
 
 			h1 {
-				margin: 0 0 0-.2rem;
+				margin: 0;
 				line-height: .9;
 				opacity: .85;
 			}
@@ -64,7 +69,7 @@
 				letter-spacing: .9rem;
 			}
 			.playfair-divider {
-				margin: 0 .7rem 0 1.1rem;
+				margin: 0 .7rem 0 0;
 			}
 			img#whale-icon {
 				position: absolute;
@@ -89,8 +94,8 @@
 
 				.halo {
 					margin: 0 0 .3rem .2rem;
-					height: .4rem;
-					width: 2.6rem;
+					height: .5rem;
+					width: 2.5rem;
 				}
 
 				h1 {
@@ -100,7 +105,7 @@
 
 				img#paint-streak {
 					width: 17.5rem;
-					height: .5rem;
+					height: .6rem;
 					transform: rotate(-10deg) translateY(-1.4rem);
 					opacity: .95;
 				}
@@ -112,7 +117,7 @@
 			box-shadow: $box-shadow-med;
 			padding: 1.2rem 1.5rem;
 			width: 85%;
-			margin-left: 1rem;
+			margin-left: .9rem;
 			p {
 				margin: 0;
 			}
