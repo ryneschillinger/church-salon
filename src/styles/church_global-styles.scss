@@ -105,10 +105,12 @@ p {
 		font-family: 'Brown Bold', sans-serif !important;
 		color: $blue;
 		text-decoration: none;
+		cursor: pointer;
 		&:hover {
 			text-decoration: underline;
 		}
 	}
+
 }
 
 .txt-gold {
@@ -129,6 +131,10 @@ p {
 
 .txt-bold {
 	font-family: 'Brown Bold', sans-serif !important;
+}
+
+.txt-blue-onblack {
+	color: $blue-onblack !important;
 }
 
 .txt-allcaps {
@@ -201,8 +207,8 @@ button {
 }
 .btn--chop {
 	overflow: hidden;
-	-webkit-transition: border-color 0.5s, color 0.5s;
-	transition: border-color 0.5s, color 0.5s;
+	-webkit-transition: border-color 0.5s, color 0.5s, box-shadow 0.5s;
+	transition: border-color 0.5s, color 0.5s, box-shadow 0.5s;
 	-webkit-transition-timing-function: cubic-bezier(0.2, 1, 0.3, 1);
 	transition-timing-function: cubic-bezier(0.2, 1, 0.3, 1);
 }
@@ -262,6 +268,14 @@ button {
 }
 .btn-primary--green.btn--chop:hover::before {
 	background-color: #1E0C55 !important;
+}
+
+// Secondary--white shadow on hover
+.btn-secondary--white.btn--chop:hover {
+	color: #fff !important;
+	border-color: $gold;
+	background: transparent !important;
+	box-shadow: 0 0 3rem .2rem rgba(44,44,44,.5);
 }
 
 
