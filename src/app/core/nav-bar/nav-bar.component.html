@@ -25,7 +25,7 @@
 				Book Now
 			</button>
 		</div>
-		<span (click)="mobileMenuOpen = !mobileMenuOpen;" id="mobile-menu">
+		<span (click)="mobileMenuOpen = !mobileMenuOpen;" (click)="disableScroll()" id="mobile-menu">
 			<div class="mobile-menu-btn" [ngClass]="{'menu-open': mobileMenuOpen}">
 	          <span></span>
 	          <span></span>
