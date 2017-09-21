@@ -34,7 +34,7 @@ export class NavBarComponent {
 		},
 	]
 
-	disableScroll() {
+	toggleScroll() {
 		if (this.mobileMenuOpen === true) {
 			let html = $('html'); 
 			let body = $('body'); 

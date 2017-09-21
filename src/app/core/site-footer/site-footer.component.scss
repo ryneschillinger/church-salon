@@ -47,6 +47,7 @@ footer {
 		width: 2.6rem;
 		transition: $transition;
 		background: white;
+		cursor: pointer;
 		&:hover {
 			transform: translateY(-.7rem);
 		}

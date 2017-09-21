@@ -1,7 +1,7 @@
 <nav>
 	<div class="container">
 		<div class="nav-logo">
-			<a pageScroll [pageScrollDuration]="400" href="#home" (click)="mobileMenuOpen = false" >
+			<a pageScroll [pageScrollDuration]="400" href="#home" (click)="mobileMenuOpen = false" (click)="toggleScroll()">
 				<img src="../../../assets/logo_gradient.svg" alt="CHURCH salon logo" id="logo-desktop">
 				<img src="../../../assets/logo_stacked.svg" alt="CHURCH salon logo" id="logo-mobile">
 
@@ -25,7 +25,7 @@
 				Book Now
 			</button>
 		</div>
-		<span (click)="mobileMenuOpen = !mobileMenuOpen;" (click)="disableScroll()" id="mobile-menu">
+		<span (click)="mobileMenuOpen = !mobileMenuOpen;" (click)="toggleScroll()" id="mobile-menu">
 			<div class="mobile-menu-btn" [ngClass]="{'menu-open': mobileMenuOpen}">
 	          <span></span>
 	          <span></span>
@@ -47,6 +47,7 @@
 				[pageScrollDuration]="400" 
 				[pageScrollOffset]="69" 
 				(click)="mobileMenuOpen = false" 
+				(click)="toggleScroll()" 
 				href="#{{link.pageAnchor}}">
 					{{link.name}}
 				</a>

@@ -102,7 +102,7 @@ p {
 
 	a {
 		font-family: 'Brown Bold', sans-serif !important;
-		color: $blue;
+		color: $blue !important;
 		text-decoration: none;
 		cursor: pointer;
 		&:hover {
@@ -126,6 +126,10 @@ p {
 
 .txt-regular {
 	font-family: 'Brown Regular', sans-serif !important;
+}
+
+.txt-italic {
+	font-family: 'Brown Italic', sans-serif !important;
 }
 
 .txt-bold {

@@ -77,6 +77,12 @@
 h3.promise-copy {
 	margin: 6rem auto 7rem auto;
 	max-width: 80%;
+	a {
+		transition: $transition;
+		&:hover {
+			color: $gold-hover;
+		}
+	}
 }
 
 #seamonster-icon {
@@ -86,6 +92,27 @@ h3.promise-copy {
 }
 
 // Re-order hero message and photo, story width
+
+@media only screen and (min-width: 1600px) {
+
+	#hero-bkg {
+		height: 102rem !important;
+		max-height: 102rem !important;
+		clip-path: polygon(0 0, 100% 0, 100% 40%, 0% 100%);
+		-webkit-clip-path: polygon(0 0, 100% 0, 100% 40%, 0% 100%);
+	}
+
+}
+
+@media only screen and (max-width: 1440px) {
+
+	#hero-bkg {
+		max-height: 94rem;
+		clip-path: polygon(0 0, 100% 0, 100% 50%, 0% 100%);
+		-webkit-clip-path: polygon(0 0, 100% 0, 100% 50%, 0% 100%);
+	}
+
+}
 
 @media only screen and (max-width: 880px) {
 
