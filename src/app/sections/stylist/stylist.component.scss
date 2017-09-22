@@ -238,6 +238,7 @@
 	color: $black;
 	-webkit-box-shadow: 0 0 6rem rgba(44,44,44,.55);
 	        box-shadow: 0 0 6rem rgba(44,44,44,.55);
+	padding: 7.2rem 0 8rem 0;
 
 	#testify-header {
 		position: relative;
@@ -454,5 +455,17 @@
 	}
 	img#arrow {
 		display: block !important;
+	}
+	#testify-header {
+		margin-bottom: 0 !important;
+	}
+	#testimonials-container {
+		padding: 5rem 0 5.5rem 0 !important;
+	}
+	#quote {
+		margin: 4rem auto 3rem auto !important;
+		h4 {
+			margin: 2.5rem 0 4rem 0 !important;
+		}
 	}
 }

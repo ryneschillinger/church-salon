@@ -77,8 +77,8 @@
 .services-list {
 	border-top: .2rem solid $gold;
 	border-bottom: .2rem solid $gold;
-	-webkit-box-shadow: $box-shadow-med;
-	        box-shadow: $box-shadow-med;
+	-webkit-box-shadow: 0 .5rem 1.8rem rgba(44,44,44,.25);
+	        box-shadow: 0 .5rem 1.8rem rgba(44,44,44,.25);
 	li {
 		font-family: 'Brown Bold', sans-serif;
 		padding: 1.7rem 1.8rem 1.5rem 1.8rem;
