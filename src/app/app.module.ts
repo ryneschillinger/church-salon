@@ -23,7 +23,6 @@ import { SiteFooterComponent } from './core/site-footer/site-footer.component';
 import { HeroComponent } from './sections/hero/hero.component';
 import { ServicesComponent } from './sections/services/services.component';
 import { MulletGangComponent } from './sections/mullet-gang/mullet-gang.component';
-import { InspirationComponent } from './sections/inspiration/inspiration.component';
 import { SalonInfoComponent } from './sections/salon-info/salon-info.component';
 import { StylistComponent } from './sections/stylist/stylist.component';
 import { PoliciesComponent } from './sections/policies/policies.component';
@@ -38,7 +37,6 @@ export const components = [
   HeroComponent,
   ServicesComponent,
   MulletGangComponent,
-  InspirationComponent,
   SalonInfoComponent,
   StylistComponent,
   PoliciesComponent,

@@ -53,6 +53,12 @@ export class NavBarComponent {
 		    var marginR = body.outerWidth()-initWidth;
 		    var marginB = body.outerHeight()-initHeight; 
 		    body.css({'margin-right': marginR,'margin-bottom': marginB});
+
+		    // Prevent scrolling on mobile devices
+		    var mobileMenu = document.getElementById('mobile-menu-screen');
+		    mobileMenu.addEventListener('touchmove', function(e) {
+		    	e.preventDefault();
+		    }, false);
 		}
 		else {
 			let html = $('html');
