@@ -7,6 +7,12 @@
 	padding: 0;
 	-webkit-box-shadow: 0 0 6rem rgba(44,44,44,.32);
 	        box-shadow: 0 0 6rem rgba(44,44,44,.32);
+
+	.hr-gold-thick {
+		z-index: 3;
+		position: absolute;
+
+	}
 }
 
 #mullet-message {
@@ -40,7 +46,7 @@
 	#mullet-bkg-stamps,
 	#mullet-bkg-img {
 		content: '';
-		height: 45rem;
+		height: 55rem;
 	}
 
 	#mullet-bkg-stamps {
@@ -61,15 +67,22 @@
 
 @media only screen and (max-width: 780px) {
 	#mullet-gang-container {
-		height: 80rem;
+		height: 74rem !important;
 	}
 	#mullet-message {
-		height: 22.5rem !important;
-		margin-top: 0; margin-bottom: 0;
+		height: 44rem !important;
+		margin-top: 0 !important; margin-bottom: 0 !important;
 	}
 	#mullet-bkg-stamps {
 		background-size: cover !important;
 		background-position: center right !important;
-		opacity: .85;
+		opacity: .85 !important;
+	}
+	#mullet-bkg-stamps {
+		height: 44rem !important;
+	}
+	#mullet-bkg-img {
+		height: 30rem !important;
+		background-position: center !important;
 	}
 }

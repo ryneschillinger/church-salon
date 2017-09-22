@@ -7,8 +7,10 @@
 	background: -webkit-linear-gradient(315deg, #EDCB84, #C8A059);
 	background: -o-linear-gradient(315deg, #EDCB84, #C8A059);
 	background: linear-gradient(135deg, #EDCB84, #C8A059);
-	-webkit-box-shadow: 0 0 6rem rgba(44,44,44,.32);
-	        box-shadow: 0 0 6rem rgba(44,44,44,.32);
+	// background: url('../../../assets/black-texture.jpg');
+	// background-size: 100% 100%;
+	-webkit-box-shadow: 0 0 6rem rgba(44,44,44,.4);
+	        box-shadow: 0 0 6rem rgba(44,44,44,.4);
 }
 
 #salon-info-contact,
