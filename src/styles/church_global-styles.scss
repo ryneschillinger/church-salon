@@ -25,6 +25,11 @@ body {
 	color: white;
 }
 
+::-moz-selection {
+	background: $gold; 
+	color: white;
+}
+
 ::selection {
 	background: $gold; 
 	color: white;
@@ -33,6 +38,8 @@ body {
 // Transition
 
 .transition {
+	-webkit-transition: $transition;
+	-o-transition: $transition;
 	transition: $transition;
 }
 
@@ -44,15 +51,25 @@ body {
 }
 
 .column-right-align {
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
-	flex-direction: column;
-	justify-content: flex-start;
-	align-items: flex-end;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	    -ms-flex-direction: column;
+	        flex-direction: column;
+	-webkit-box-pack: start;
+	    -ms-flex-pack: start;
+	        justify-content: flex-start;
+	-webkit-box-align: end;
+	    -ms-flex-align: end;
+	        align-items: flex-end;
 }
 
 .section-padding {
 	padding: 8rem 0;
 }
+
 
 /*-------- TEXT STYLES --------*/
 
@@ -167,7 +184,9 @@ button {
 	position: relative;
 	z-index: 1;
 	cursor: pointer;
-	transition-duration: $transition; 
+	-webkit-transition-duration: $transition;
+	     -o-transition-duration: $transition;
+	        transition-duration: $transition; 
 
 	a {
 		text-decoration: none !important;
@@ -212,9 +231,14 @@ button {
 .btn--chop {
 	overflow: hidden;
 	-webkit-transition: border-color 0.5s, color 0.5s, box-shadow 0.5s;
+	-webkit-transition: border-color 0.5s, color 0.5s, -webkit-box-shadow 0.5s;
+	transition: border-color 0.5s, color 0.5s, -webkit-box-shadow 0.5s;
+	-o-transition: border-color 0.5s, color 0.5s, box-shadow 0.5s;
 	transition: border-color 0.5s, color 0.5s, box-shadow 0.5s;
+	transition: border-color 0.5s, color 0.5s, box-shadow 0.5s, -webkit-box-shadow 0.5s;
 	-webkit-transition-timing-function: cubic-bezier(0.2, 1, 0.3, 1);
-	transition-timing-function: cubic-bezier(0.2, 1, 0.3, 1);
+	-o-transition-timing-function: cubic-bezier(0.2, 1, 0.3, 1);
+	   transition-timing-function: cubic-bezier(0.2, 1, 0.3, 1);
 }
 
 // Secondary button chop
@@ -230,9 +254,14 @@ button {
 	-webkit-transform: rotate3d(0, 0, 1, -45deg) translate3d(0, -3em, 0);
 	transform: rotate3d(0, 0, 1, -45deg) translate3d(0, -3em, 0);
 	-webkit-transform-origin: 0% 100%;
-	transform-origin: 0% 100%;
+	-ms-transform-origin: 0% 100%;
+	    transform-origin: 0% 100%;
 	-webkit-transition: -webkit-transform 0.5s, opacity 0.5s, background-color 0.5s;
+	-webkit-transition: opacity 0.5s, background-color 0.5s, -webkit-transform 0.5s;
+	transition: opacity 0.5s, background-color 0.5s, -webkit-transform 0.5s;
+	-o-transition: transform 0.5s, opacity 0.5s, background-color 0.5s;
 	transition: transform 0.5s, opacity 0.5s, background-color 0.5s;
+	transition: transform 0.5s, opacity 0.5s, background-color 0.5s, -webkit-transform 0.5s;
 }
 .btn--chop:hover {
 	color: #fff !important;
@@ -245,7 +274,8 @@ button {
 	-webkit-transform: rotate3d(0, 0, 1, 0deg);
 	transform: rotate3d(0, 0, 1, 0deg);
 	-webkit-transition-timing-function: cubic-bezier(0.2, 1, 0.3, 1);
-	transition-timing-function: cubic-bezier(0.2, 1, 0.3, 1);
+	-o-transition-timing-function: cubic-bezier(0.2, 1, 0.3, 1);
+	   transition-timing-function: cubic-bezier(0.2, 1, 0.3, 1);
 }
 
 // Primary button chop
@@ -279,7 +309,8 @@ button {
 	color: #fff !important;
 	border-color: $gold;
 	background: transparent !important;
-	box-shadow: 0 0 3rem .2rem rgba(44,44,44,.5);
+	-webkit-box-shadow: 0 0 3rem .2rem rgba(44,44,44,.5);
+	        box-shadow: 0 0 3rem .2rem rgba(44,44,44,.5);
 }
 
 
@@ -330,7 +361,9 @@ ul {
 	.playfair {
 		font-size: 2rem;
 		letter-spacing: .3rem;
-		transform: translateY(-.3rem);
+		-webkit-transform: translateY(-.3rem);
+		    -ms-transform: translateY(-.3rem);
+		        transform: translateY(-.3rem);
 	}
 	.playfair-divider {
 		font-size: 2rem;
@@ -340,8 +373,12 @@ ul {
 		font-family: 'Brown Italic', sans-serif;
 		letter-spacing: 1rem;
 		margin: 2rem 0;
+		display: -webkit-box;
+		display: -ms-flexbox;
 		display: flex;
-		align-items: center;
+		-webkit-box-align: center;
+		    -ms-flex-align: center;
+		        align-items: center;
 		line-height: 1;
 		padding: 0;
 	}
@@ -360,6 +397,13 @@ ul {
   position: relative;
   overflow: hidden;
   height: 500px;
+  min-height: 90rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 .parallax-container .parallax {
@@ -369,6 +413,7 @@ ul {
   right: 0;
   bottom: 0;
   z-index: -1;
+  margin-top: 10rem;
 }
 
 .parallax-container .parallax img {
@@ -381,5 +426,30 @@ ul {
   -webkit-transform: translate3d(0, 0, 0);
           transform: translate3d(0, 0, 0);
   -webkit-transform: translateX(-50%);
-          transform: translateX(-50%);
+          -ms-transform: translateX(-50%);
+      transform: translateX(-50%);
+}
+
+.parallax-double {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-pack: justify;
+	    -ms-flex-pack: justify;
+	        justify-content: space-between;
+}
+
+.half-width {
+	width: 50vw;
+	display: inline-block;
+	-webkit-box-flex: 1;
+	    -ms-flex: 1;
+	        flex: 1;
+}
+.parallax-container.half-width {
+	min-height: 58rem;
+}
+
+.parallax-container.half-width .parallax {
+		margin-top: 5rem;
 }

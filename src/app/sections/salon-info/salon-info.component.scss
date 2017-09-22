@@ -7,8 +7,6 @@
 	background: -webkit-linear-gradient(315deg, #EDCB84, #C8A059);
 	background: -o-linear-gradient(315deg, #EDCB84, #C8A059);
 	background: linear-gradient(135deg, #EDCB84, #C8A059);
-	// background: url('../../../assets/black-texture.jpg');
-	// background-size: 100% 100%;
 	-webkit-box-shadow: 0 0 6rem rgba(44,44,44,.4);
 	        box-shadow: 0 0 6rem rgba(44,44,44,.4);
 }
@@ -132,15 +130,25 @@
 	}
 
 	#salon-info-container {
+		display: -webkit-box;
+		display: -ms-flexbox;
 		display: flex;
-		flex-direction: column-reverse;
+		-webkit-box-orient: vertical;
+		-webkit-box-direction: reverse;
+		    -ms-flex-direction: column-reverse;
+		        flex-direction: column-reverse;
 	}
 }
 
 @media only screen and (max-width: 500px) {
 	#sola-message {
-		flex-direction: column;
-		align-items: center !important;
+		-webkit-box-orient: vertical;
+		-webkit-box-direction: normal;
+		    -ms-flex-direction: column;
+		        flex-direction: column;
+		-webkit-box-align: center !important;
+		    -ms-flex-align: center !important;
+		        align-items: center !important;
 
 		img#sola-logo {
 			margin-bottom: 1.5rem;

@@ -2,7 +2,8 @@
 
 #hero {
 	width: 100%;
-	box-shadow: $box-shadow-xlarge;
+	-webkit-box-shadow: $box-shadow-xlarge;
+	        box-shadow: $box-shadow-xlarge;
 	padding-top: 14rem;
 }
 
@@ -46,7 +47,8 @@
 	overflow: hidden;
 	-webkit-transform: translateX(-1px);
 		ms-transform: translateX(-1px);
-		transform: translateX(-1px);
+		-ms-transform: translateX(-1px);
+		    transform: translateX(-1px);
 	background: url('../../../assets/amy_hero.jpg');
 	background-repeat: no-repeat;
 	background-size: cover;
@@ -68,10 +70,19 @@
 
 #my-promise {
 	z-index: 2;
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
-	flex-direction: column;
-	justify-content: flex-start;
-	align-items: flex-end;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	    -ms-flex-direction: column;
+	        flex-direction: column;
+	-webkit-box-pack: start;
+	    -ms-flex-pack: start;
+	        justify-content: flex-start;
+	-webkit-box-align: end;
+	    -ms-flex-align: end;
+	        align-items: flex-end;
 	margin-top: 4rem;
 }
 
@@ -79,6 +90,8 @@ h3.promise-copy {
 	margin: 6rem auto 7rem auto;
 	max-width: 80%;
 	a {
+		-webkit-transition: $transition;
+		-o-transition: $transition;
 		transition: $transition;
 		&:hover {
 			color: $gold-hover;
@@ -122,8 +135,13 @@ h3.promise-copy {
 	}
 
 	#hero-messaging {
-		flex-direction: column;
-		align-items: flex-start;
+		-webkit-box-orient: vertical;
+		-webkit-box-direction: normal;
+		    -ms-flex-direction: column;
+		        flex-direction: column;
+		-webkit-box-align: start;
+		    -ms-flex-align: start;
+		        align-items: flex-start;
 
 		#hero-message {
 			width: 100% !important;
@@ -136,8 +154,11 @@ h3.promise-copy {
 		}
 
 		#hero-image {
+			display: -webkit-box;
+			display: -ms-flexbox;
 			display: flex;
-			align-self: center;
+			-ms-flex-item-align: center;
+			    align-self: center;
 		}
 	}
 
@@ -179,10 +200,15 @@ h3.promise-copy {
 
 	#hero-bkg {
 		top: -8rem !important;
-		height: 105rem !important;
-		max-height: 105rem !important;
+		height: 96rem !important;
+		max-height: 96rem !important;
 		clip-path: polygon(0 0, 100% 0, 100% 75%, 0% 100%);
 		-webkit-clip-path: polygon(0 0, 100% 0, 100% 75%, 0% 100%);
+	}
+
+	#hero-image {
+		width: 100% !important;
+		height: 38rem !important;
 	}
 
 }

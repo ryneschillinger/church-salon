@@ -3,7 +3,8 @@
 #services {
 	background: white;
 	width: 100%;
-	box-shadow: $box-shadow-xlarge;
+	-webkit-box-shadow: $box-shadow-xlarge;
+	        box-shadow: $box-shadow-xlarge;
 	position: relative;
 	background: transparent;
 
@@ -14,8 +15,12 @@
 
 	.section-divider {
 		position: relative;
+		display: -webkit-box;
+		display: -ms-flexbox;
 		display: flex;
-		align-items: center;
+		-webkit-box-align: center;
+		    -ms-flex-align: center;
+		        align-items: center;
 		img {
 			position: absolute;
 			left: 0;
@@ -46,9 +51,15 @@
 
 	.section-header {
 		width: 100%;
+		display: -webkit-box;
+		display: -ms-flexbox;
 		display: flex;
-		align-items: center;
-		justify-content: center;
+		-webkit-box-align: center;
+		    -ms-flex-align: center;
+		        align-items: center;
+		-webkit-box-pack: center;
+		    -ms-flex-pack: center;
+		        justify-content: center;
 		position: relative;
 		overflow: hidden;
 	}
@@ -66,13 +77,18 @@
 .services-list {
 	border-top: .2rem solid $gold;
 	border-bottom: .2rem solid $gold;
-	box-shadow: $box-shadow-med;
+	-webkit-box-shadow: $box-shadow-med;
+	        box-shadow: $box-shadow-med;
 	li {
 		font-family: 'Brown Bold', sans-serif;
 		padding: 1.7rem 1.8rem 1.5rem 1.8rem;
 		margin: 0;
+		display: -webkit-box;
+		display: -ms-flexbox;
 		display: flex;
-		justify-content: space-between;
+		-webkit-box-pack: justify;
+		    -ms-flex-pack: justify;
+		        justify-content: space-between;
 		.txt-bold {
 			text-transform: uppercase;
 			letter-spacing: .2rem;
@@ -100,8 +116,12 @@
 	background: $black;
 	color: white;
 	.color-consult--pricing {
+		display: -webkit-box;
+		display: -ms-flexbox;
 		display: flex;
-		justify-content: space-between;
+		-webkit-box-pack: justify;
+		    -ms-flex-pack: justify;
+		        justify-content: space-between;
 		color: $gold;
 		margin-bottom: .8rem;
 		.txt-bold {
