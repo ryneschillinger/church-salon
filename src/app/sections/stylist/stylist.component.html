@@ -71,9 +71,15 @@
 		</div>
 		<h4 class="txt-light" id="quote">
 			{{currentQuote.quote}} 
-			<h4 class="playfair"><span class="txt-light">&mdash;</span>{{currentQuote.name}}</h4>
+			<h4 class="playfair"><span class="txt-regular">&mdash;</span>{{currentQuote.name}}</h4>
 		</h4>
 		<div id="testimonial-avys">
+			<button 
+			class="avy-toggle" 
+			(click)="selectAvy(currentQuote.index-1);" 
+			[ngClass]="{'toggle-disabled': currentQuote.index === 0 }">
+				<img src="../../../assets/arrow-left.png" alt="arrow-left" id="arrow-left">
+			</button>
 			<button 
 			*ngFor="let avy of avys; let i = index" 
 			class="avy-btn" 
@@ -86,6 +92,12 @@
 				[pageScrollOffset]="220">
 					<img src="../assets/{{avy.photo}}" alt="{{avy.name}}">
 				</a>
+			</button>
+			<button 
+			class="avy-toggle" 
+			(click)="selectAvy(currentQuote.index+1);" 
+			[ngClass]="{'toggle-disabled': currentQuote.index === avys.length-1 }">
+			<img src="../../../assets/arrow-right.png" alt="arrow-right" id="arrow-right">
 			</button>
 		</div>
 	</div>

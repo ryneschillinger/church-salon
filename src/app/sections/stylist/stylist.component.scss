@@ -81,6 +81,8 @@
 			-ms-flex-wrap: wrap;
 			    flex-wrap: wrap;
 			mix-blend-mode: multiply;
+			height: 8rem;
+			position: relative;
 
 			h6 {
 				position: relative;
@@ -92,15 +94,15 @@
 			}
 			img#whale-icon {
 				position: absolute;
-				width: 13.4rem;
-				height: auto;
+				height: 8rem;
+				width: auto;
 				-webkit-transform: translateY(-.4rem);
 				    -ms-transform: translateY(-.4rem);
 				        transform: translateY(-.4rem);
 				opacity: .8;
 			}
 			img#arrow {
-				width: 4rem;
+				width: 3.6rem;
 				height: auto;
 				opacity: .7;
 				display: none;
@@ -269,7 +271,7 @@
 	#testimonials {
 		#quote {
 			margin: 6rem auto;
-			max-width: 78rem;
+			max-width: 80rem;
 			line-height: 1.5;
 
 			h4 {
@@ -294,7 +296,48 @@
 			        align-items: center;
 			height: 8rem;
 			width: 100%;
-			max-width: 30rem;
+			max-width: 40rem;
+
+			button.avy-toggle {
+				height: 6rem;
+				color: $gold;
+				padding: 0;
+				display: -webkit-box;
+				display: -ms-flexbox;
+				display: flex;
+				-webkit-box-align: center;
+				    -ms-flex-align: center;
+				        align-items: center;
+				cursor: pointer;
+				img {
+					width: 3.2rem;
+					height: 1.9rem;
+					cursor: pointer;
+					-webkit-transition-property: -webkit-transform;
+					transition-property: -webkit-transform;
+					-o-transition-property: transform;
+					transition-property: transform;
+					transition-property: transform, -webkit-transform;
+					-webkit-transition-duration: $transition;
+					     -o-transition-duration: $transition;
+					        transition-duration: $transition;
+				}
+				&:hover > img#arrow-left {
+					-webkit-transform: translateX(-.7rem);
+					    -ms-transform: translateX(-.7rem);
+					        transform: translateX(-.7rem);
+				}
+				&:hover > img#arrow-right {
+					-webkit-transform: translateX(.7rem);
+					    -ms-transform: translateX(.7rem);
+					        transform: translateX(.7rem);
+				}
+			}
+
+			button.avy-toggle.toggle-disabled {
+				pointer-events: none;
+				opacity: .17;
+			}
 
 			button.avy-btn {
 				width: 6rem;
@@ -308,6 +351,11 @@
 				overflow: hidden;
 				position: relative;
 				cursor: pointer;
+				transition: $transition;
+
+				&:hover {
+					filter: brightness(1.07);
+				}
 
 				img {
 					position: absolute;
@@ -372,7 +420,8 @@
 	#stylist-bio {
 
 		.section-divider {
-			max-width: 15rem;
+			max-width: 15rem !important;
+			height: 10rem !important;
 
 			h6 {
 				display: -webkit-box;
@@ -389,14 +438,15 @@
 			}
 
 			#playfair-stylist {
-				margin: 7rem 0 1rem 0;
+				margin: 3.8rem 0 1rem 0;
 
 				.playfair-divider {
 					margin: 0 0rem 0 .4rem;
 				}
 			}
 			img#whale-icon {
-				width: 11.5rem !important;
+				height: 7.2rem !important;
+				top: 1rem !important;
 			}
 		}
 	}
@@ -443,18 +493,23 @@
 
 @media only screen and (max-width: 660px) {
 	#stylist-container {
-		background-position: top right 33% !important;
+		background-position: top right 31% !important;
 	}
 }
 
 @media only screen and (max-width: 480px) {
-	img#whale-icon {
-		-webkit-transform: translateY(-1.7rem) !important;
-		    -ms-transform: translateY(-1.7rem) !important;
-		        transform: translateY(-1.7rem) !important;
+	#stylist-bio {
+		padding-top: 6.5rem !important;
+	}
+
+	.section-divider {
+		height: 16rem !important;
 	}
 	img#arrow {
 		display: block !important;
+		position: absolute !important;
+		bottom: -5.2rem !important;
+		left: 0 !important;
 	}
 	#testify-header {
 		margin-bottom: 0 !important;

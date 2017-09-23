@@ -36,7 +36,7 @@
 	}
 	.grid-row {
 		margin-right: 2.55%;
-		padding-left: .5rem;
+		padding-left: .0;
 		padding-right: .5rem;
 	}
 }
@@ -76,11 +76,15 @@
 	#mullet-message {
 		height: 44rem !important;
 		margin-top: 0 !important; margin-bottom: 0 !important;
+
+		.grid-row {
+			padding-left: .5rem !important;
+		}
 	}
 	#mullet-bkg-stamps {
 		background-size: cover !important;
 		background-position: center right !important;
-		opacity: .85 !important;
+		opacity: .88 !important;
 	}
 	#mullet-bkg-stamps {
 		height: 44rem !important;

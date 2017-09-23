@@ -4,6 +4,7 @@
 	margin: 0;
 	min-height: 500px;
 	padding: 1.3rem;
+	overflow: hidden;
 	background: -webkit-linear-gradient(315deg, #EDCB84, #C8A059);
 	background: -o-linear-gradient(315deg, #EDCB84, #C8A059);
 	background: linear-gradient(135deg, #EDCB84, #C8A059);
@@ -14,6 +15,13 @@
 #salon-info-contact,
 #salon-info-map {
 	padding: 0;
+}
+
+#salon-info-contact {
+	width: 60%;
+}
+#salon-info-map {
+	width: 40%;
 }
 
 #salon-info-contact {
@@ -35,7 +43,7 @@
 
 	#salon-info-contact-container {
 		width: 92%;
-		max-width: 45.5rem;
+		max-width: 48rem;
 		padding: 0;
 		margin: 1rem 0 0 0;
 		.grid-row {
@@ -63,9 +71,17 @@
 		-webkit-box-align: center;
 		    -ms-flex-align: center;
 		        align-items: center;
+		height: 10rem;
+		width: 100%;
+		position: relative;
+		margin-top: -1rem !important;
+		margin-bottom: -2rem !important;
+
 		img.shark-icon {
 			position: absolute;
-			height: 10rem;
+			height: 100%;
+			left: calc(50% - 3.6rem);
+			margin: 0;
 		}
 		h6 {
 			z-index: 2;
@@ -141,10 +157,18 @@
 		display: -webkit-box;
 		display: -ms-flexbox;
 		display: flex;
-		-webkit-box-orient: vertical;
-		-webkit-box-direction: reverse;
-		    -ms-flex-direction: column-reverse;
-		        flex-direction: column-reverse;
+		-webkit-box-align: start;
+		-ms-flex-align: start;
+		        align-items: flex-start;
+		-webkit-box-pack: start;
+		-ms-flex-pack: start;
+		        justify-content: flex-start;
+	}
+	#salon-info-contact {
+		width: 100%;
+	}
+	#salon-info-map {
+		width: 100%;
 	}
 }
 

@@ -29,6 +29,7 @@ export class StylistComponent {
 	]
 
 	currentQuote = {
+		index: 0,
 		quote: this.avys[0].quote,
 		name: this.avys[0].name,
 	}
@@ -38,6 +39,7 @@ export class StylistComponent {
 			this.avys[j].selected = false;
 		}
 		this.avys[i].selected = true;
+		this.currentQuote.index = i;
 		this.currentQuote.quote = this.avys[i].quote;
 		this.currentQuote.name = this.avys[i].name;
 	}
