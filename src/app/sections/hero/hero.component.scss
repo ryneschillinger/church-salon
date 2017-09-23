@@ -169,8 +169,8 @@ h3.promise-copy {
 	}
 
 	#hero-bkg {
-		height: 100rem !important;
-		max-height: 100rem !important;
+		height: 98rem !important;
+		max-height: 98rem !important;
 		clip-path: polygon(0 0, 100% 0, 100% 60%, 0% 100%);
 		-webkit-clip-path: polygon(0 0, 100% 0, 100% 60%, 0% 100%);
 	}
@@ -188,7 +188,7 @@ h3.promise-copy {
 	}
 
 	#seamonster-icon {
-		margin-bottom: 0
+		margin-bottom: 0 !important;
 	}
 }
 

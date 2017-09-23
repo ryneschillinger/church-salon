@@ -99,6 +99,13 @@
 
 #salon-info-map {
 	overflow: hidden;
+	-webkit-flex-grow: 1;
+	-ms-flex-positive: 1;
+	-webkit-box-flex: 1;
+	flex-grow: 1;
+	-ms-flex-preferred-size: 0;
+	flex-basis: 0;
+	max-width: 100%;
 }
 
 #sola-message {
@@ -130,6 +137,7 @@
 	}
 
 	#salon-info-container {
+		min-height: 800px;
 		display: -webkit-box;
 		display: -ms-flexbox;
 		display: flex;

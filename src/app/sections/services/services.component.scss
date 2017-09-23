@@ -181,10 +181,26 @@ img#paint-stroke-2 {
 	img#paint-stroke-2 {
 		width: 66% !important;
 	}
+
 }
 
 @media only screen and (max-width: 880px) {
 	img#paint-stroke-1 {
 		width: 50% !important;
+	}
+}
+
+@media only screen and (max-width: 780px) {
+	#services-intro {
+		padding-right: 4rem !important;
+	}
+}
+
+@media only screen and (max-width: 480px) {
+	img#paint-stroke-1 {
+		width: 50% !important;
+	}
+	#services-intro {
+		margin-top: 4.5rem !important;
 	}
 }
