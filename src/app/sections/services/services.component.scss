@@ -7,6 +7,8 @@
 	        box-shadow: $box-shadow-xlarge;
 	position: relative;
 	background: transparent;
+	padding-bottom: 7.5rem;
+	overflow-x: hidden;
 
 	.grid-row {
 		padding-left: .5rem;
@@ -96,12 +98,12 @@
 		-webkit-box-pack: justify;
 		    -ms-flex-pack: justify;
 		        justify-content: space-between;
-		.txt-bold {
+		.txt-regular {
 			text-transform: uppercase;
 			letter-spacing: .2rem;
 			font-size: 1.4rem;
 		}
-		.txt-regular {
+		.txt-light {
 			letter-spacing: .05rem;
 			font-size: 1.5rem;
 			text-align: right;
@@ -131,12 +133,12 @@
 		        justify-content: space-between;
 		color: $gold;
 		margin-bottom: .8rem;
-		.txt-bold {
+		.txt-regular {
 			text-transform: uppercase;
 			letter-spacing: .2rem;
 			font-size: 1.4rem;
 		}
-		.txt-regular {
+		.txt-light {
 			letter-spacing: .05rem;
 			font-size: 1.5rem;
 			text-align: right;
@@ -148,9 +150,63 @@
 	}
 }
 
+#goldwell {
+	background: $off-gold;
+	width: calc(100% + 1.4rem);
+	height: 16rem;
+	margin: 8rem -.7rem 0 -.7rem;
+	position: relative;
+	-webkit-box-shadow: 0 .3rem 1.4rem rgba(44,44,44,.2);
+	        box-shadow: 0 .3rem 1.4rem rgba(44,44,44,.2);
+
+	#goldwell-product {
+		position: absolute;
+		right: 1.9rem;
+		bottom: 0;
+		height: 18.5rem;
+		width: auto;
+	}
+
+	#goldwell-message {
+		width: 100%;
+		height: 100%;
+		display: -webkit-box;
+		display: -ms-flexbox;
+		display: flex;
+		-webkit-box-align: start;
+		    -ms-flex-align: start;
+		        align-items: flex-start;
+		-webkit-box-pack: center;
+		    -ms-flex-pack: center;
+		        justify-content: center;
+		-webkit-box-orient: vertical;
+		-webkit-box-direction: normal;
+		    -ms-flex-direction: column;
+		        flex-direction: column;
+		margin-left: 2rem;
+		h4, p {
+			margin: 0;
+		}
+		p {
+			width: calc(100% - 11rem);
+		}
+	}
+
+	#goldwell-logo {
+		width: 33%;
+		min-width: 20rem;
+		height: auto;
+	}
+}
+
 @media only screen and (max-width: 780px) {
 	.color-consult {
 		margin: 0 !important;
+	}
+
+	#goldwell {
+		width: 100% !important;
+		margin: 8rem 0 0 0 !important;
 	}
 }
 

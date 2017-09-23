@@ -27,6 +27,12 @@ export class ServicesComponent {
 		{ name: 'Brazilian Blowout', price: 'Price Varies' },
 	]
 
+	style = [
+		{ name: 'Retouch Color', price: 'Starting at $70' },
+		{ name: 'All-Over Color', price: 'Starting at $95' },
+		{ name: 'Full Foil', price: 'Starting at $120' },
+	]
+
 	enter() {
 	  console.log('Track scroll enter is working!');
 	}

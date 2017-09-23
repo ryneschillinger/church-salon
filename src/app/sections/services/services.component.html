@@ -20,14 +20,13 @@
 
 				<!-- Intro -->
 				<p id="services-intro">
-					Every appointment is customized to help you shine. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque mauris tellus, iaculis vel auctor id, placerat et elit. Quisque pulvinar quis odio id pellentesque. If you have any questions, check out the
+					While most haircut services at CHURCH have fixed prices, color projects are customized to fulfill your heart's desires. Many services below may vary in price depending on what you're hoping to achieve. If you have any questions about scheduling or appointments, check out the 
 					<a  	
 					pageScroll 
 					[pageScrollDuration]="400" 
 					[pageScrollOffset]="69" 
 					href="#policies">
-						salon policies
-					</a>.
+						salon policies</a>.
 				</p>
 
 				<!-- Cuts -->
@@ -39,22 +38,22 @@
 					<!-- List of services -->
 					<ul class="services-list">
 						<li *ngFor="let service of cuts; let i = index">
-							<span class="txt-bold">{{service.name}}</span>
-							<span class="txt-regular">{{service.price}}</span>
+							<span class="txt-regular">{{service.name}}</span>
+							<span class="txt-light">{{service.price}}</span>
 						</li>
 					</ul>
 				</div>
 
 				<!-- Color -->
-				<div class="services-content" style="margin-bottom: 7.5rem;">
+				<div class="services-content">
 					<div class="section-header">
 						<h2>COLOR</h2>
 						<img src="../../assets/color.png" alt="color" class="services-header-img">
 					</div>
 					<div class="color-consult">
 						<div class="color-consult--pricing">
-							<span class="txt-bold">Color Consultation</span>
-							<span class="txt-regular">On the House</span>
+							<span class="txt-regular">Color Consultation</span>
+							<span class="txt-light">On the House</span>
 						</div>
 						<p>
 							Want new color? Is change scary? Had bad color experiences at another place? 
@@ -73,10 +72,35 @@
 					<!-- List of services -->
 					<ul class="services-list">
 						<li *ngFor="let service of color; let i = index">
-							<span class="txt-bold">{{service.name}}</span>
-							<span class="txt-regular">{{service.price}}</span>
+							<span class="txt-regular">{{service.name}}</span>
+							<span class="txt-light">{{service.price}}</span>
 						</li>
 					</ul>
+				</div>
+
+				<!-- Style -->
+				<div class="services-content">
+					<div class="section-header">
+						<h2>STYLE</h2>
+						<img src="../../assets/style.svg" alt="style" class="services-header-img">
+					</div>
+					<!-- List of services -->
+					<ul class="services-list">
+						<li *ngFor="let service of style; let i = index">
+							<span class="txt-regular">{{service.name}}</span>
+							<span class="txt-light">{{service.price}}</span>
+						</li>
+					</ul>
+				</div>
+
+				<!-- Goldwell -->
+				<div id="goldwell">
+					<div id="goldwell-message">
+<!-- 						<img src="../../assets/goldwell_logo.svg" alt="Goldwell Logo" id="goldwell-logo"> -->
+						<h4 class="txt-gold txt-allcaps txt-bold">Goldwell Headline</h4>
+						<p>As a national color educator, CHURCH proudly uses Goldwell color products.</p>
+					</div>
+					<img src="../../assets/goldwell.png" alt="Goldwell Elumen" id="goldwell-product">
 				</div>
 
 
