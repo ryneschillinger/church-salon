@@ -468,32 +468,36 @@
 	}
 }
 
+@media only screen and (max-width: 980px) {
+
+	#colorzoom-container {
+		min-height: 60rem !important;
+		height: auto !important;
+		background-position: center right -100px !important;
+	}
+
+	#colorzoom-story {
+		padding: 3.6rem 6rem 3.6rem 3.6rem !important;
+		margin-bottom: 3.2rem !important;
+		width: 100% !important;
+	}
+	#colorzoom-container {
+		padding-top: 1.6rem;
+		padding-bottom: 1.6rem;
+	}
+
+}
+
 @media only screen and (max-width: 780px) {
 
 	#blackbox {
 		width: 100% !important;
 	}
 
-	#colorzoom-container {
-		min-height: 50rem;
-		height: auto;
-		background-position: center right -100px;
-	}
-
-	#gold-box {
-		position: absolute !important;
-		top: 0 !important;
-		left: 0 !important;
-		width: 100% !important;
-		height: 100% !important;
-	}
-
 	img#colorzoom-logo {
-		width: 50%;
-	}
-
-	#colorzoom-story {
-		padding: 3.6rem !important;
+		height: 6rem !important;
+		width: auto !important;
+		right: 3.8rem !important;
 	}
 
 	#stylist-bio {
