@@ -9,21 +9,21 @@ export class StylistComponent {
 
 	avys = [
 		{
-			name: 'Sheila Lastname',
-			quote: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed scelerisque eget ante nec porttitor. Etiam cursus id lacus eget posuere. Curabitur faucibus mi non vehicula faucibus. Etiam dolor ex, congue sed massa sit amet, efficitur eleifend urna.',
-			photo: '',
+			name: 'Sheila',
+			quote: 'Corinne Brown is an artist. I love to give her free reign with my hair and every single time I leave looking and feeling amazing. She is so incredibly talented and her work is inspiring. I trust her completely.',
+			photo: 'avy_sheila.jpg',
 			selected: true,
 		},
 		{
-			name: 'Anna Peters',
-			quote: 'Quisque arcu tellus, iaculis sed tempus et, interdum non elit. Nulla nulla nibh, semper eget lacinia in, imperdiet vitae lectus. Quisque vitae erat at eros malesuada volutpat eget vitae lorem.',
-			photo: '',
+			name: 'Anna',
+			quote: "Beyond being a masterful technician, Corinne's innate sense of style and an \"it\" factor I'm never going to be able to accurately convey in words makes her your hair's new best friend. I feel my most beautiful and at ease in my own skin after one of her cuts; my look is fairly natural and low maintenance but her attention to detail and subtle tweaks make it feel modern, effortless, sexy. I honestly can't imagine letting anyone else near my hair.",
+			photo: 'avy_anna.jpg',
 			selected: false,
 		},
 		{
-			name: 'Third Person',
-			quote: 'Quisque nibh nulla, accumsan eu justo quis, lacinia fermentum nisi. Vivamus erat enim, tempus sit amet risus sed, aliquet fermentum lorem. Curabitur consectetur libero ut felis convallis, vitae aliquam libero faucibus. Aliquam erat volutpat. Duis sed leo viverra, iaculis mauris a, tincidunt purus.',
-			photo: '',
+			name: 'Ryne',
+			quote: 'I always feel a little guilty when Corinne cuts my hair. Asking a world-class colorist to clean up your fade is kind of like asking Bobby Flay to serve you some chicken nuggets. Fortunately, Corinne tackles every challenge—even the simple and less-colorful ones—with an unrivaled sense of professionalism and attention to detail. I feel like the most handsome version of myself every time I leave her stylist chair.',
+			photo: 'avy_ryne.jpg',
 			selected: false,
 		},
 	]

@@ -79,7 +79,13 @@
 			class="avy-btn" 
 			[ngClass]="{'avy-active': avy.selected}" 
 			(click)="selectAvy(i);">
-				<img src="../assets/avy_sheila.jpg" alt="sheila avatar">
+				<a 
+				href="#quote" 
+				pageScroll 
+				[pageScrollDuration]="200" 
+				[pageScrollOffset]="220">
+					<img src="../assets/{{avy.photo}}" alt="{{avy.name}}">
+				</a>
 			</button>
 		</div>
 	</div>
