@@ -151,9 +151,9 @@
 }
 
 #goldwell {
-	background: $off-gold;
+	background: $black;
 	width: calc(100% + 1.4rem);
-	height: 16rem;
+	height: 17rem;
 	margin: 8rem -.7rem 0 -.7rem;
 	position: relative;
 	-webkit-box-shadow: 0 .3rem 1.4rem rgba(44,44,44,.2);
@@ -163,12 +163,12 @@
 		position: absolute;
 		right: 1.9rem;
 		bottom: 0;
-		height: 18.5rem;
+		height: 20rem;
 		width: auto;
 	}
 
 	#goldwell-message {
-		width: 100%;
+		width: calc(100% - 19rem);
 		height: 100%;
 		display: -webkit-box;
 		display: -ms-flexbox;
@@ -188,14 +188,8 @@
 			margin: 0;
 		}
 		p {
-			width: calc(100% - 11rem);
+			color: white;
 		}
-	}
-
-	#goldwell-logo {
-		width: 33%;
-		min-width: 20rem;
-		height: auto;
 	}
 }
 
@@ -259,4 +253,12 @@ img#paint-stroke-2 {
 	#services-intro {
 		margin-top: 4.5rem !important;
 	}
+	#goldwell-product {
+		-webkit-clip-path: inset(0 0 0 45%);
+		clip-path: inset(0 0 0 45%);
+	}
+	#goldwell-message {
+		width: calc(100% - 11rem) !important;
+	}
+
 }
