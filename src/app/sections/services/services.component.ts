@@ -24,13 +24,17 @@ export class ServicesComponent {
 		{ name: 'Toning/Colorbalancing', price: '$35' },
 		{ name: 'Express Toning', price: '$25' },
 		{ name: 'Conditioning Treatment', price: '$20' },
-		{ name: 'Brazilian Blowout', price: 'Price Varies' },
+		{ name: 'Individual Foils', price: 'up to 10 $3.75 per foil' },
+		{ name: 'Silklift lightener', price: '$17.50' },
+		{ name: 'Elumen', price: '$20' },
+		{ name: 'Color Lock Serum', price: '$15' },
 	]
 
 	style = [
-		{ name: 'Retouch Color', price: 'Starting at $70' },
-		{ name: 'All-Over Color', price: 'Starting at $95' },
-		{ name: 'Full Foil', price: 'Starting at $120' },
+		{ name: 'Blow out', price: '$45' },
+		{ name: 'Updo', price: '$75' },
+		{ name: 'Bridal updo', price: '$95' },
+		{ name: 'Styling Lesson', price: '$45' },
 	]
 
 	enter() {
