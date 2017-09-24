@@ -51,13 +51,15 @@
 
 		#O {
 			position: relative;
+			width: 10rem;
+			height: 12.7rem;
 
 			#star-number {
 				display: none;
 				position: absolute;
 				top: 0;
 				left: 0;
-				width: 100%; height: 100%;
+				width: 10rem; height: 12.7rem;
 				-webkit-box-pack: center;
 				    -ms-flex-pack: center;
 				        justify-content: center;
@@ -67,6 +69,8 @@
 			}
 			img#starfish-icon {
 				position: absolute;
+				left: 2.1rem;
+				top: 3.4rem;
 				width: 5.5rem;
 				height: auto;
 				z-index: -2;
@@ -74,6 +78,8 @@
 			}
 			.playfair {
 				position: absolute;
+				top: 5.4rem;
+				left: 2.9rem;
 				font-size: 2rem;
 				letter-spacing: .3rem;
 				z-index: -1;
@@ -82,6 +88,7 @@
 		}
 
 		#I {
+			margin: 0 -.1rem 0 .1rem;
 			position: relative;
 			height: 11rem;
 			display: -webkit-box;
@@ -210,10 +217,10 @@
 // Reduce size of header
 @media only screen and (max-width: 600px) {
 	#policies-container {
-		padding: 0 0 5rem 0;
+		padding: 0 0 5rem 0 !important;
 
 		.container {
-			padding-top: 14rem;
+			padding-top: 14rem !important;
 		}
 
 		img#green-paint {
@@ -232,16 +239,27 @@
 		}
 
 		#O {
+			width: 4.8rem !important;
+			height: 6rem !important;
+			#star-number {
+				width: 4.8rem !important;
+				height: 6rem !important;
+			}
+			img#starfish-icon {
+				left: -.5rem !important;
+				top: -.1rem !important;
+			}
 			.playfair {
+				top: 2.4rem !important;
+				left: 1.2rem !important;
 				font-size: 1.4rem !important;
-				margin-top: -.2rem !important;
 				letter-spacing: 0 !important;
 			}
 		}
 
 		#I {
 			height: 4.5rem !important;
-			margin-top: .7rem;
+			margin-top: .7rem !important;
 		}
 
 		#color-bars-i {

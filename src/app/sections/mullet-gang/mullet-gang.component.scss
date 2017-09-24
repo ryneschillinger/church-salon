@@ -5,8 +5,8 @@
 	overflow: hidden;
 	margin: 0;
 	padding: 0;
-	-webkit-box-shadow: 0 0 6rem rgba(44,44,44,.32);
-	        box-shadow: 0 0 6rem rgba(44,44,44,.32);
+	-webkit-box-shadow: 0 0 6rem rgba(44,44,44,.4);
+	        box-shadow: 0 0 6rem rgba(44,44,44,.4);
 
 	.hr-gold-thick {
 		z-index: 3;
@@ -35,6 +35,8 @@
 		margin: 1.5rem 0 2.5rem 0;
 	}
 	.grid-row {
+		width: 66%;
+		margin-left: 0;
 		margin-right: 2.55%;
 		padding-left: .0;
 		padding-right: .5rem;
@@ -54,6 +56,7 @@
 	}
 
 	#mullet-bkg-stamps {
+		width: 66%;
 		background: url('../../../assets/mullet-stamps.jpg');
 		background-repeat: no-repeat;
 		background-size: cover;
@@ -61,6 +64,7 @@
 	}
 
 	#mullet-bkg-img {
+		width: 34%;
 		background: url('../../../assets/mullet.jpg');
 		background-repeat: no-repeat;
 		background-size: cover;
@@ -79,6 +83,7 @@
 
 		.grid-row {
 			padding-left: .5rem !important;
+			width: 100% !important;
 		}
 	}
 	#mullet-bkg-stamps {
@@ -87,9 +92,13 @@
 		opacity: .88 !important;
 	}
 	#mullet-bkg-stamps {
+		display: block !important;
+		width: 100% !important;
 		height: 44rem !important;
 	}
 	#mullet-bkg-img {
+		display: block !important;
+		width: 100% !important;
 		height: 30rem !important;
 		background-position: center !important;
 	}
