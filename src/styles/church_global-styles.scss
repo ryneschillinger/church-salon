@@ -343,6 +343,15 @@ hr.hr-gold-thick {
 	background: linear-gradient(to right, #EDCB84, #C8A059);
 }
 
+hr.em-dash {
+	height: 3px;
+	width: 2rem;
+	background: -webkit-gradient(linear, left top, right top, from(#EDCB84), to(#C8A059));
+	background: -webkit-linear-gradient(left, #EDCB84, #C8A059);
+	background: -o-linear-gradient(left, #EDCB84, #C8A059);
+	background: linear-gradient(to right, #EDCB84, #C8A059);
+}
+
 /*-------- LISTS --------*/
 
 ul {
@@ -389,12 +398,6 @@ ul {
 	}
 }
 
-
-.em-dash {
-	margin: -.7rem 0 -.6rem -3px;
-	color: $gold;
-	line-height: 1;
-}
 
 /*-------- PARALLAX --------*/
 

@@ -24,7 +24,7 @@ export class ServicesComponent {
 		{ name: 'Toning/Colorbalancing', price: '$35' },
 		{ name: 'Express Toning', price: '$25' },
 		{ name: 'Conditioning Treatment', price: '$20' },
-		{ name: 'Individual Foils', price: 'up to 10 $3.75 per foil' },
+		{ name: 'Individual Foils', price: 'Up to 10 ($3.75/foil)' },
 		{ name: 'Silklift lightener', price: '$17.50' },
 		{ name: 'Elumen', price: '$20' },
 		{ name: 'Color Lock Serum', price: '$15' },
