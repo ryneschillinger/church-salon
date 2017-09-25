@@ -27,7 +27,9 @@
 		img {
 			position: absolute;
 			left: 0;
+			top: 0;
 			height: 100%;
+			flex: none;
 		}
 		h6 {
 			margin: 1.6rem 0 .5rem 3rem;
@@ -98,6 +100,9 @@
 		-webkit-box-pack: justify;
 		    -ms-flex-pack: justify;
 		        justify-content: space-between;
+		-webkit-box-align: space-between;
+		-ms-flex-align: space-between;
+		        align-items: space-between;
 		.txt-regular {
 			text-transform: uppercase;
 			letter-spacing: .2rem;
@@ -107,6 +112,7 @@
 			letter-spacing: .05rem;
 			font-size: 1.5rem;
 			text-align: right;
+			margin: -.1rem 0 .1rem 0;
 		}
 	}
 	li:nth-child(even) {
@@ -168,7 +174,6 @@
 	}
 
 	#goldwell-message {
-		width: calc(100% - 19rem);
 		height: 100%;
 		display: -webkit-box;
 		display: -ms-flexbox;
@@ -186,6 +191,7 @@
 		margin-left: 2rem;
 		h4, p {
 			margin: 0;
+			width: calc(100% - 19rem);
 		}
 		p {
 			color: white;
@@ -258,7 +264,7 @@ img#paint-stroke-2 {
 		clip-path: inset(0 0 0 45%);
 	}
 	#goldwell-message {
-		width: calc(100% - 11rem) !important;
+		width: calc(100% - 12rem) !important;
 	}
 
 }
