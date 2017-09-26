@@ -227,14 +227,14 @@ nav .nav-links a {
 
 	button.btn-primary {
 		font-size: 3rem;
-		padding: 1.4rem 1.5rem 1.5rem 1.9rem;
+		padding: 1rem 1.1rem 1.3rem 1.4rem !important;
 		width: 100%;
 		margin-top: 1rem;
 		border: .4rem solid transparent;
 		letter-spacing: .3rem;
-
 		span {
 			white-space: nowrap;
+			line-height: 1;
 		}
 	}
 

@@ -19,13 +19,13 @@ declare var $: any;
 export class AppComponent {
   title = 'app';
 
-  enter() {
-    console.log('Track scroll enter is working!');
-  }
+  // enter() {
+  //   console.log('Track scroll enter is working!');
+  // }
   
-  leave() {
-    console.log('Track scroll leave is working too!');
-  }
+  // leave() {
+  //   console.log('Track scroll leave is working too!');
+  // }
 
   ngAfterViewInit() {
     $(document).ready(function(){
