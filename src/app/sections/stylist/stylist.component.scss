@@ -465,9 +465,13 @@
 @media only screen and (max-width: 980px) {
 
 	#colorzoom-container {
-		min-height: 60rem !important;
+		min-height: 0 !important;
 		height: auto !important;
-		background-position: center right -100px !important;
+		background-position: center right !important;
+		display: inline-block !important;
+		.container {
+			margin: 0 !important;
+		}
 	}
 
 	#colorzoom-story {
@@ -475,10 +479,10 @@
 		margin-bottom: 3.2rem !important;
 		width: 100% !important;
 	}
-	#colorzoom-container {
-		padding-top: 1.6rem;
-		padding-bottom: 1.6rem;
-	}
+	#goldbox {
+		height: 200px !important;
+		margin: 0 !important;
+	} 
 
 }
 
@@ -522,6 +526,9 @@
 @media only screen and (max-width: 660px) {
 	#stylist-container {
 		background-position: top right 31% !important;
+	}
+	#colorzoom-container {
+		background-position: center right -120px !important;
 	}
 }
 
