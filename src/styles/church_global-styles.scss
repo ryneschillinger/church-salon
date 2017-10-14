@@ -11,6 +11,7 @@ body * {
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
 	-webkit-text-stroke: 0.2px;
+	-webkit-text-stroke-color: inherit;
 	font-weight: normal;
 }
 
@@ -209,7 +210,13 @@ button {
 .btn-primary {
 	background: $gold;
 	color: white;
+	padding: .8rem .9rem .8rem 1.1rem;
 	border: .2rem solid transparent;
+	border-image: -webkit-gradient(linear, left, right, from(#eccd8b), to(#c69d55));
+	border-image: -webkit-linear-gradient(left, #eccd8b, #c69d55);
+	border-image: -o-linear-gradient(left, #eccd8b, #c69d55);
+	border-image: linear-gradient(to right, #eccd8b, #c69d55);
+	border-image-slice: 1;
 }
 .btn-primary--green {
 	background: $green;
