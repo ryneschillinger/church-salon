@@ -212,9 +212,12 @@ button {
 	color: white;
 	padding: .8rem .9rem .8rem 1.1rem;
 	border: .2rem solid transparent;
-	border-image: -webkit-gradient(linear, left, right, from(#eccd8b), to(#c69d55));
+	-webkit-border-image: -webkit-gradient(linear, left, right, from(#eccd8b), to(#c69d55));
+	        border-image: -webkit-gradient(linear, left, right, from(#eccd8b), to(#c69d55));
 	border-image: -webkit-linear-gradient(left, #eccd8b, #c69d55);
-	border-image: -o-linear-gradient(left, #eccd8b, #c69d55);
+	-o-border-image: -o-linear-gradient(left, #eccd8b, #c69d55);
+	   border-image: -o-linear-gradient(left, #eccd8b, #c69d55);
+	border-image: -webkit-gradient(linear, left top, right top, from(#eccd8b), to(#c69d55));
 	border-image: linear-gradient(to right, #eccd8b, #c69d55);
 	border-image-slice: 1;
 }
@@ -222,9 +225,12 @@ button {
 	background: $green;
 	color: #1E0C55;
 	border: .2rem solid transparent;
-	border-image: -webkit-gradient(linear, left, right, from(#6ae4ae), to(#009e6c));
+	-webkit-border-image: -webkit-gradient(linear, left, right, from(#6ae4ae), to(#009e6c));
+	        border-image: -webkit-gradient(linear, left, right, from(#6ae4ae), to(#009e6c));
 	border-image: -webkit-linear-gradient(left, #6ae4ae, #009e6c);
-	border-image: -o-linear-gradient(left, #6ae4ae, #009e6c);
+	-o-border-image: -o-linear-gradient(left, #6ae4ae, #009e6c);
+	   border-image: -o-linear-gradient(left, #6ae4ae, #009e6c);
+	border-image: -webkit-gradient(linear, left top, right top, from(#6ae4ae), to(#009e6c));
 	border-image: linear-gradient(to right, #6ae4ae, #009e6c);
 	border-image-slice: 1;
 }

@@ -232,9 +232,12 @@ nav .nav-links a {
 		margin-top: 1rem;
 		letter-spacing: .3rem;
 		border: .4rem solid transparent;
-		border-image: -webkit-gradient(linear, left, right, from(#e9c67f), to(#C8A059));
+		-webkit-border-image: -webkit-gradient(linear, left, right, from(#e9c67f), to(#C8A059));
+		        border-image: -webkit-gradient(linear, left, right, from(#e9c67f), to(#C8A059));
 		border-image: -webkit-linear-gradient(left, #e9c67f, #C8A059);
-		border-image: -o-linear-gradient(left, #e9c67f, #C8A059);
+		-o-border-image: -o-linear-gradient(left, #e9c67f, #C8A059);
+		   border-image: -o-linear-gradient(left, #e9c67f, #C8A059);
+		border-image: -webkit-gradient(linear, left top, right top, from(#e9c67f), to(#C8A059));
 		border-image: linear-gradient(to right, #e9c67f, #C8A059);
 		border-image-slice: 1;
 		span {
