@@ -58,7 +58,7 @@ const modules = [
   BrowserModule,
   BrowserAnimationsModule,
   HttpModule,
-  RouterModule.forRoot(appRoutes, { useHash: true }),
+  RouterModule.forRoot(appRoutes, { useHash: false }),
   AgmCoreModule.forRoot({
     apiKey: 'AIzaSyDBDh4aMyN0E7sNhRT95I56qjduVCkhsH4'
   }),
