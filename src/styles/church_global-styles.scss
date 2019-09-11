@@ -211,7 +211,8 @@ button {
 	background: $gold;
 	color: white;
 	padding: .8rem .9rem .8rem 1.1rem;
-	border: .2rem solid transparent;
+	border-width: .2rem;
+	border-style: solid;
 	-webkit-border-image: -webkit-gradient(linear, left, right, from(#eccd8b), to(#c69d55));
 	        border-image: -webkit-gradient(linear, left, right, from(#eccd8b), to(#c69d55));
 	border-image: -webkit-linear-gradient(left, #eccd8b, #c69d55);
@@ -224,7 +225,8 @@ button {
 .btn-primary--green {
 	background: $green;
 	color: #1E0C55;
-	border: .2rem solid transparent;
+	border-width: .2rem;
+	border-style: solid;
 	-webkit-border-image: -webkit-gradient(linear, left, right, from(#6ae4ae), to(#009e6c));
 	        border-image: -webkit-gradient(linear, left, right, from(#6ae4ae), to(#009e6c));
 	border-image: -webkit-linear-gradient(left, #6ae4ae, #009e6c);

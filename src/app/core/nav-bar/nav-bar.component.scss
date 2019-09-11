@@ -231,7 +231,8 @@ nav .nav-links a {
 		width: 100%;
 		margin-top: 1rem;
 		letter-spacing: .3rem;
-		border: .4rem solid transparent;
+		border-width: .4rem;
+		border-style: solid;
 		-webkit-border-image: -webkit-gradient(linear, left, right, from(#e9c67f), to(#C8A059));
 		        border-image: -webkit-gradient(linear, left, right, from(#e9c67f), to(#C8A059));
 		border-image: -webkit-linear-gradient(left, #e9c67f, #C8A059);
@@ -310,7 +311,8 @@ nav .nav-links a {
 		button.btn-primary {
 			font-size: 2rem;
 			padding: 1rem 1rem 1rem 1.4rem;
-			border: .3rem solid transparent;
+			border-width: .3rem;
+			border-style: solid;
 			border-image: -webkit-gradient(linear, left, right, from(#e9c67f), to(#C8A059));
 			border-image: -webkit-linear-gradient(left, #e9c67f, #C8A059);
 			border-image: -o-linear-gradient(left, #e9c67f, #C8A059);
