@@ -8,24 +8,23 @@ import { Component } from '@angular/core';
 export class ServicesComponent {
 
 	cuts = [
-		{ name: "Women's Haircut", price: '$65' },
-		{ name: "Men's Haircut", price: '$43' },
+		{ name: "All Haircuts", price: '$70' },
 		{ name: 'Bang Trim / Neck Cleanup', price: 'On the House' },
 	]
 
 	color = [
-		{ name: 'Retouch Color', price: 'Starting at $70' },
-		{ name: 'All-Over Color', price: 'Starting at $95' },
-		{ name: 'Full Foil', price: 'Starting at $120' },
-		{ name: 'Partial Foil', price: 'Starting at $105' },
-		{ name: 'T-Foil', price: 'Starting at $90' },
-		{ name: 'Balayage', price: 'Starting at $150' },
-		{ name: 'Bleach & Tone', price: 'Starting at $120' },
-		{ name: 'Toning/Colorbalancing', price: '$35' },
-		{ name: 'Express Toning', price: '$25' },
+		{ name: 'Retouch Color', price: 'Starting at $80' },
+		{ name: 'All-Over Color', price: 'Starting at $105' },
+		{ name: 'Full Foil', price: 'Starting at $130' },
+		{ name: 'Partial Foil', price: 'Starting at $115' },
+		{ name: 'T-Foil', price: 'Starting at $95' },
+		{ name: 'Balayage', price: 'Starting at $175' },
+		{ name: 'Bleach & Tone', price: 'Starting at $140' },
+		{ name: 'Toning/Colorbalancing', price: '$45' },
+		{ name: 'Express Toning', price: '$30' },
 		{ name: 'Conditioning Treatment', price: '$20' },
 		{ name: 'Individual Foils', price: 'Up to 10 ($3.75/foil)' },
-		{ name: 'Silklift lightener', price: '$17.50' },
+		{ name: 'Silklift Lightener', price: '$10' },
 		{ name: 'Elumen', price: '$20' },
 		{ name: 'Color Lock Serum', price: '$15' },
 	]
