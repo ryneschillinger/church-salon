@@ -8,8 +8,7 @@ import { Component } from '@angular/core';
 export class ServicesComponent {
 
 	cuts = [
-		{ name: "All Haircuts", price: '$70' },
-		{ name: 'Bang Trim / Neck Cleanup', price: 'On the House' },
+		{ name: 'Bang Trim / Neck Cleanup', price: 'On the house!' },
 	]
 
 	color = [

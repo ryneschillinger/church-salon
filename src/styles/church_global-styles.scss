@@ -140,6 +140,10 @@ p {
 	color: $gold !important;
 }
 
+.txt-goldhover {
+	color: $gold-hover !important;
+}
+
 .txt-white {
 	color: white !important;
 }
@@ -224,7 +228,7 @@ button {
 }
 .btn-primary--green {
 	background: $green;
-	color: #1E0C55;
+	color: #0E0F30;
 	border-width: .2rem;
 	border-style: solid;
 	-webkit-border-image: -webkit-gradient(linear, left, right, from(#6ae4ae), to(#009e6c));
@@ -239,7 +243,7 @@ button {
 .btn-secondary--white {
 	border: .2rem solid white;
 	color: white;
-	background: rgba(0,0,110,.15);
+	background: rgba(0,0,110,.25);
 }
 .btn-secondary--gold {
 	border: .2rem solid $gold;
@@ -318,7 +322,7 @@ button {
 
 // Primary--green button chop
 .btn-primary--green.btn--chop::before {
-	background: #1E0C55 !important;
+	background: #0E0F30 !important;
 }
 .btn-primary--green.btn--chop:hover {
 	color: $green !important;
@@ -326,7 +330,7 @@ button {
 	background: $green !important;
 }
 .btn-primary--green.btn--chop:hover::before {
-	background-color: #1E0C55 !important;
+	background-color: #0E0F30 !important;
 }
 
 // Secondary--white shadow on hover
