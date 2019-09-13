@@ -84,7 +84,7 @@
 	}
 }
 
-.services-list {
+ul.services-list {
 	border-top: .2rem solid $gold;
 	border-bottom: .2rem solid $gold;
 	-webkit-box-shadow: 0 .4rem 1.8rem rgba(44,44,44,.2);
@@ -126,7 +126,6 @@
 .service-hero {
 	font-family: 'Brown Bold', sans-serif;
 	padding: 1.7rem 1.8rem 1.5rem 1.8rem;
-	margin: 0 -.6rem;
 	background: $black;
 	color: white;
 	.service-hero--pricing {
@@ -174,6 +173,7 @@
 
 	#goldwell-message {
 		height: 100%;
+		line-height: 1.1;
 		display: -webkit-box;
 		display: -ms-flexbox;
 		display: flex;
@@ -189,11 +189,14 @@
 		        flex-direction: column;
 		margin-left: 2rem;
 		h4, p {
-			margin: 0;
 			width: calc(100% - 19rem);
+		}
+		h4 {
+			margin: 0 0 1rem 0;
 		}
 		p {
 			color: white;
+			margin: 0
 		}
 	}
 }
@@ -232,13 +235,6 @@ img#paint-stroke-2 {
 	z-index: -1;
 }
 
-@media only screen and (max-width: 700px) {
-	img#paint-stroke-2 {
-		width: 66% !important;
-	}
-
-}
-
 @media only screen and (max-width: 880px) {
 	img#paint-stroke-1 {
 		width: 50% !important;
@@ -251,12 +247,22 @@ img#paint-stroke-2 {
 	}
 }
 
+@media only screen and (max-width: 700px) {
+	img#paint-stroke-2 {
+		width: 66% !important;
+	}
+
+}
+
 @media only screen and (max-width: 480px) {
 	img#paint-stroke-1 {
 		width: 50% !important;
 	}
 	#services-intro {
 		margin-top: 4.5rem !important;
+	}
+	#goldwell {
+		height: 18.5rem;
 	}
 	#goldwell-product {
 		-webkit-clip-path: inset(0 0 0 45%);
@@ -265,6 +271,10 @@ img#paint-stroke-2 {
 	#goldwell-message {
 		h4, p {
 			width: calc(100% - 12rem) !important;
+		}
+		h4 {
+			margin: 0 0 .5rem 0 !important;
+			line-height: 1.1 !important;
 		}
 	}
 
