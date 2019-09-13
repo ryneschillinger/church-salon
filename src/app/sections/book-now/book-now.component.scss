@@ -1,30 +1,36 @@
 @import '../../../styles/church_vars.scss';
 
 #book-now-container {
-	background: url(../../../assets/paint_abstract.jpg);
-	background-position: center;
-	background-size: 100% 100%;
-	background-repeat: no-repeat;
+	// background: url(../../../assets/paint_abstract.jpg);
+	// background-position: center;
+	// background-size: 100% 100%;
+	// background-repeat: no-repeat;
 	height: 52rem;
-	display: table;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 	width: 100%;
+	position: relative;
+	overflow: hidden;
 
 	#book-now-message {
 		max-width: 60rem;
-		color: white;
 		margin: 0 auto;
-		display: table-cell; vertical-align: middle;
+		display: table-cell; 
+		vertical-align: middle;
+		text-shadow: 0 0 1.2rem rgba(0,0,0,1);
 
-		h3, h4 {
+		h3, h5 {
 			text-transform: uppercase;
 			text-align: center;
-			line-height: 1;
+			line-height: 1.1;
 			margin: 0;
 		}
 
 		#cta {
 			text-align: center;
-			margin: 2rem 0 1.4rem 0;
+			margin: 1.8rem 0 2.2rem 0;
+			color: white;
 		}
 		a {
 			text-decoration: none
@@ -46,6 +52,35 @@
 		}
 
 	}
+
+	.overlay {
+		position: absolute;
+		top: 0; 
+		left:0;
+		z-index: -1;
+		width: 100%;
+		height: 100%;
+		background-color: rgba(17,12,65,.2);
+		mix-blend-mode: multiply;
+	}
+
+	#booknow-video {
+		position: absolute; 
+		top: 0; 
+		right: 0;
+    z-index: -2;
+		min-width: 100%; 
+		min-height: 100%;
+		-webkit-filter: blur(6px);
+		-moz-filter: blur(6px);
+		-o-filter: blur(6px);
+		-ms-filter: blur(6px);
+		filter: blur(6px);
+		-webkit-transform: scale(1.1);
+		-ms-transform: scale(1.1);
+		transform: scale(1.1)
+	}
+
 }
 
 @media only screen and (max-width: 860px) {

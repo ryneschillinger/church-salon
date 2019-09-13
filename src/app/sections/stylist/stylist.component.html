@@ -70,8 +70,10 @@
 			<h2 class="txt-bold txt-allcaps">Testify<span class="playfair">!</span></h2>
 		</div>
 		<h4 class="txt-light" id="quote">
-			{{currentQuote.quote}} 
-			<h4 class="playfair"><span class="txt-regular">&mdash;</span>{{currentQuote.name}}</h4>
+			<span>
+				{{currentQuote.quote}} 
+				<h4 class="playfair"><span class="txt-regular">&mdash;</span>{{currentQuote.name}}</h4>
+			</span>
 		</h4>
 		<div id="testimonial-avys">
 			<button 
@@ -85,13 +87,7 @@
 			class="avy-btn" 
 			[ngClass]="{'avy-active': avy.selected}" 
 			(click)="selectAvy(i);">
-				<a 
-				href="#quote" 
-				pageScroll 
-				[pageScrollDuration]="200" 
-				[pageScrollOffset]="220">
 					<img src="../assets/{{avy.photo}}" alt="{{avy.name}}">
-				</a>
 			</button>
 			<button 
 			class="avy-toggle" 
