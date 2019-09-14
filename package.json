@@ -23,6 +23,7 @@
     "@angular/platform-browser": "^8.2.5",
     "@angular/platform-browser-dynamic": "^8.2.5",
     "@angular/router": "^8.2.5",
+    "@ng-toolkit/universal": "^1.1.21",
     "ang2-parallax": "^1.0.2",
     "core-js": "^3.2.1",
     "gsap": "^2.1.3",
