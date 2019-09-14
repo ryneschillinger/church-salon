@@ -16,3 +16,74 @@
   -moz-animation-duration: .75s;
   animation-duration: .75s;
 }
+
+.parallax-container {
+  display: flex !important;
+  justify-content: center !important;
+  align-items: center !important;
+}
+
+/* .animate-container {
+  max-width: 70%;
+} */
+
+.ghost-text {
+  opacity: 0;
+  letter-spacing: -6rem;
+  -webkit-transform: none;
+      -moz-transform: none;
+      -ms-transform: none;
+        -o-transform: none;
+          transform: none;
+  -webkit-transition: all .7s ease-in-out;
+      -moz-transition: all .7s ease-in-out;
+      -ms-transition: all .7s ease-in-out;
+        -o-transition: all .7s ease-in-out;
+          transition: all .7s ease-in-out;
+}
+
+.ghost-text h1 {
+  /* font-family: 'Brown Italic', sans-serif; */
+  text-align: center;
+  line-height: .88;
+  font-size: 15.7rem;
+}
+
+@media only screen and (max-width: 1500px) {
+  .ghost-text h1 {
+    font-size: 10.75vw;
+  }
+}
+
+@media only screen and (max-width: 1280px) {
+  .ghost-text h1 {
+    font-size: 12vw;
+  }
+}
+
+
+@media only screen and (max-width: 1080px) {
+  .ghost-text h1 {
+    font-size: 13.5vw;
+  }
+}
+
+.ghost-text.visible {
+  opacity: .85;
+  letter-spacing: 0;
+}
+
+.txt-cuts {
+  color: #f43b3b;
+}
+
+.txt-colors {
+background: #833ab4;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to left, #fcb045 10%, #f43b3b 50%, #833ab4 90%);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to left, #fcb045 10%, #f43b3b 50%, #833ab4 90%); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+
+  color: transparent;
+  -webkit-background-clip: text;
+  background-clip: text;
+}

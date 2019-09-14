@@ -149,6 +149,10 @@ p {
 	color: $gold-hover !important;
 }
 
+.txt-blue {
+	color: $blue !important;
+}
+
 .txt-white {
 	color: white !important;
 }
@@ -167,6 +171,10 @@ p {
 
 .txt-bold {
 	font-family: 'Brown Bold', sans-serif !important;
+}
+
+.txt-bold-italic {
+	font-family: 'Brown Bold Italic', sans-serif !important;
 }
 
 .txt-blue-onblack {
@@ -424,6 +432,35 @@ ul {
 		        align-items: center;
 		line-height: 1;
 		padding: 0;
+	}
+}
+
+/*-------- SHIMMER TEXT EFFECT --------*/
+
+.shimmer {
+	background: #D5AF68 -webkit-gradient(linear, 100% 0, 0 0, from(#D5AF68), color-stop(0.7, #fce8bd), to(#D5AF68));
+	background-position: -20rem top; 
+	background-repeat: no-repeat;
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	-webkit-animation-name: shimmer;
+	-webkit-animation-duration: 3.5s;
+	-webkit-animation-iteration-count: infinite;
+	-webkit-background-size: 20rem 100%; 
+
+}
+
+@-webkit-keyframes shimmer {
+	0% {
+			background-position: calc(0% - 20rem) top; 
+	}
+
+	66% {
+			background-position: calc(100% + 20rem) top; 
+	}
+
+	100% {
+			background-position: calc(100% + 20rem) top; 
 	}
 }
 
