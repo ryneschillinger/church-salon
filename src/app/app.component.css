@@ -45,25 +45,41 @@
 .ghost-text h1 {
   /* font-family: 'Brown Italic', sans-serif; */
   text-align: center;
-  line-height: .88;
+  line-height: .85;
   font-size: 15.7rem;
 }
 
-@media only screen and (max-width: 1500px) {
-  .ghost-text h1 {
-    font-size: 10.75vw;
-  }
+.br-visible {
+  display: none;
 }
 
-@media only screen and (max-width: 1280px) {
-  .ghost-text h1 {
-    font-size: 12vw;
+@media only screen and (max-width: 1500px) {
+  .txt-cuts {
+    font-size: 15vw;
+  }
+  .txt-colors {
+    font-size: 11.5vw !important;
   }
 }
 
 @media only screen and (max-width: 1080px) {
-  .ghost-text h1 {
-    font-size: 13.5vw;
+  .txt-cuts {
+    font-size: 20vw !important;
+  }
+  .txt-colors {
+    font-size: 17vw !important;
+  }
+  .br-visible {
+    display: inline-block;
+  }
+}
+
+@media only screen and (max-width: 780px) {
+  .txt-cuts {
+    font-size: 28vw !important;
+  }
+  .txt-colors {
+    font-size: 21vw !important;
   }
 }
 
@@ -73,7 +89,12 @@
 }
 
 .txt-cuts {
-  color: #f43b3b;
+  background: #f43b3b;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to left, #f43b3b 10%, #f43b3b 50%, #f43b3b 90%);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to left, #f43b3b 10%, #f43b3b 50%, #f43b3b 90%); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  color: transparent;
+  -webkit-background-clip: text;
+  background-clip: text;
 }
 
 .txt-colors {
@@ -83,4 +104,5 @@
   color: transparent;
   -webkit-background-clip: text;
   background-clip: text;
+  mix-blend-mode: multiply;
 }
