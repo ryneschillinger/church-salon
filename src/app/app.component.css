@@ -61,7 +61,6 @@
   }
 }
 
-
 @media only screen and (max-width: 1080px) {
   .ghost-text h1 {
     font-size: 13.5vw;
@@ -78,11 +77,9 @@
 }
 
 .txt-colors {
-background: #833ab4;  /* fallback for old browsers */
-background: -webkit-linear-gradient(to left, #fcb045 10%, #f43b3b 50%, #833ab4 90%);  /* Chrome 10-25, Safari 5.1-6 */
-background: linear-gradient(to left, #fcb045 10%, #f43b3b 50%, #833ab4 90%); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-
-
+  background: #833ab4;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to left, #fcb045 10%, #f43b3b 50%, #833ab4 90%);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to left, #fcb045 10%, #f43b3b 50%, #833ab4 90%); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   color: transparent;
   -webkit-background-clip: text;
   background-clip: text;
