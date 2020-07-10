@@ -42,7 +42,7 @@
 
 
 /** Evergreen browsers require these. **/
-import 'core-js/es';
+// import 'core-js/es';
 
 
 /** ALL Firefox browsers require the following to support `@angular/animation`. **/

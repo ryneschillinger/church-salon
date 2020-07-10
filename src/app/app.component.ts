@@ -1,5 +1,4 @@
 import { Component, ViewEncapsulation, OnInit, AfterViewInit } from '@angular/core';
-import { TweenLite, TimelineMax, TweenMax, Linear, TimelineLite } from "gsap";
 declare var $: any;
 declare let ScrollMagic: any;
 
