@@ -71,7 +71,9 @@ const modules = [
   declarations: [
     ...components,
   ],
-  imports: [...modules,],
+  imports: [
+    ...modules
+  ],
   providers: [],
   bootstrap: [AppComponent],
   schemas: [

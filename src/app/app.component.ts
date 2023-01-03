@@ -15,7 +15,7 @@ declare let ScrollMagic: any;
     '../styles/font-awesome/font-awesome.scss',
     '../../node_modules/snazzy-info-window/dist/snazzy-info-window.css',
   ],
-  encapsulation: ViewEncapsulation.None 
+  encapsulation: ViewEncapsulation.None
 })
 export class AppComponent {
   title = 'app';
