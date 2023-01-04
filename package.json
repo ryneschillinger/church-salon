@@ -16,7 +16,6 @@
   "private": true,
   "dependencies": {
     "@agm/core": "^3.0.0-beta.0",
-    "@types/googlemaps": "^3.39.12",
     "@agm/snazzy-info-window": "^1.1.0",
     "@angular/animations": "^10.0.2",
     "@angular/common": "^10.0.2",
@@ -29,6 +28,7 @@
     "@angular/platform-browser-dynamic": "^10.0.2",
     "@angular/router": "^10.0.2",
     "@ng-toolkit/universal": "^8.1.0",
+    "@types/googlemaps": "^3.39.12",
     "ang2-parallax": "^1.0.2",
     "core-js": "^2.6.11",
     "gsap": "^3.3.4",
