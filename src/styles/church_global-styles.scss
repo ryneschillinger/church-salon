@@ -222,13 +222,13 @@ button {
 	padding: .8rem .9rem .8rem 1.1rem;
 	border-width: .2rem;
 	border-style: solid;
-	-webkit-border-image: -webkit-gradient(linear, left, right, from(#eccd8b), to(#c69d55));
-	        border-image: -webkit-gradient(linear, left, right, from(#eccd8b), to(#c69d55));
-	border-image: -webkit-linear-gradient(left, #eccd8b, #c69d55);
-	-o-border-image: -o-linear-gradient(left, #eccd8b, #c69d55);
-	   border-image: -o-linear-gradient(left, #eccd8b, #c69d55);
-	border-image: -webkit-gradient(linear, left top, right top, from(#eccd8b), to(#c69d55));
-	border-image: linear-gradient(to right, #eccd8b, #c69d55);
+	-webkit-border-image: -webkit-gradient(linear, left, right, from(#fedc92), to(#c69d55));
+	        border-image: -webkit-gradient(linear, left, right, from(#fedc92), to(#c69d55));
+	border-image: -webkit-linear-gradient(left, #fedc92, #c69d55);
+	-o-border-image: -o-linear-gradient(left, #fedc92, #c69d55);
+	   border-image: -o-linear-gradient(left, #fedc92, #c69d55);
+	border-image: -webkit-gradient(linear, left top, right top, from(#fedc92), to(#c69d55));
+	border-image: linear-gradient(to right, #fedc92, #c69d55);
 	border-image-slice: 1;
 }
 .btn-primary--green {
